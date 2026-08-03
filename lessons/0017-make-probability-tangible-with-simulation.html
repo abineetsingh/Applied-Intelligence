@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 17 — Make probability tangible with simulation</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 17 of 67 · 15–20 minutes</p>
+  <h1>Make probability tangible with simulation</h1>
+  <p class="lede">Run the process many times when intuition cannot track interacting uncertainty.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Data becomes leverage only when you understand how it was generated, how it varies, and what selection hid from view.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What is path dependence? Give one nonfinancial example.</p>
+    <details><summary>Reveal after answering</summary><p>The order of events changes available future states—for example, early customer trust loss can prevent later product improvements from being evaluated.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Simulation turns assumptions into repeated synthetic outcomes. It is useful when several uncertain inputs interact or when tails and sequences matter. It does not validate assumptions; it reveals their implications.</p>
+  <ol>
+      <li>Define uncertain inputs as ranges or distributions.</li>
+      <li>Specify relationships and constraints.</li>
+      <li>Generate many plausible runs.</li>
+      <li>Inspect distributions, tail frequency, and failure paths.</li>
+      <li>Vary assumptions to find sensitivity.</li>
+  </ol>
+
+  <h2>Worked case: startup runway</h2>
+  <div class="note"><p>A single forecast says runway is twelve months. A simulation samples sales timing, churn, hiring dates, and collection delays. It may show a 25% chance of running out within eight months—decision-relevant information hidden by the average.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Use a spreadsheet, short script, or paper dice to simulate 100 runs of a decision with two uncertain inputs. Record median, 10th percentile, and failure rate.</p>
+    <p><strong>Deliverable:</strong> A simulated outcome distribution plus the assumption with greatest sensitivity.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Simulate sequences of wins and losses for a trading rule to expose drawdown and ruin that a mean return conceals.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a modern foundation for sampling, distributions, simulation, and inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/data-claim-audit.html">Data-Claim Audit</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What can simulation establish directly?",
+    "options": [
+      "Implications of chosen assumptions",
+      "Truth of chosen assumptions",
+      "Certainty about future outcomes",
+      "Absence of model errors"
+    ],
+    "answer": 0,
+    "explain": "Simulation propagates assumptions; it cannot prove those assumptions represent reality."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

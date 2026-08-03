@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 56 — Make recognition-primed decisions</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 56 of 67 · 15–20 minutes</p>
+  <h1>Make recognition-primed decisions</h1>
+  <p class="lede">Use experience to generate a plausible action, then simulate it before execution.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Top-tier judgment recognizes when intuition is earned, finds leverage in systems, aligns incentives, and scales asymmetric bets without confusing visibility with causality.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What two environmental conditions support skilled intuition?</p>
+    <details><summary>Reveal after answering</summary><p>Learnable regularities and sufficient opportunities for timely, diagnostic feedback from genuinely comparable decisions.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Experienced practitioners often recognize a situation and retrieve the first workable action rather than compare every option. The discipline is to diagnose anomalies and mentally simulate the candidate through likely consequences before acting.</p>
+  <ol>
+      <li>Recognize the situation prototype and relevant cues.</li>
+      <li>Generate the first plausible action.</li>
+      <li>Mentally simulate its sequence and side effects.</li>
+      <li>Look for expectancies violated by current facts.</li>
+      <li>Act, modify, or switch to deliberate comparison.</li>
+  </ol>
+
+  <h2>Worked case: a production incident under time pressure</h2>
+  <div class="note"><p>An experienced engineer recognizes database saturation and considers shedding load. Before acting, she simulates customer impact, checks whether queue growth and replica lag match the pattern, and notices an anomaly suggesting a retry storm. Recognition accelerates diagnosis; anomaly checking prevents rote response.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Choose a familiar domain and reconstruct one fast judgment. List cues noticed, prototype retrieved, candidate action, mental simulation, and anomaly that would force slower reasoning.</p>
+    <p><strong>Deliverable:</strong> A recognition-primed decision trace and stop condition.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>For unfamiliar product domains, you lack prototypes; slow down, seek base rates, and build experience through small feedback-rich experiments.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://www.gary-klein.com/rpd">Recognition-Primed Decision Model — Gary Klein</a> — a research-grounded model of rapid expert choice in natural settings.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/executive-judgment-playbook.html">Executive Judgment Playbook</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What follows the first plausible action?",
+    "options": [
+      "Mentally simulate likely sequence",
+      "Execute without checking anomalies",
+      "Generate every possible option",
+      "Ignore learned situation cues"
+    ],
+    "answer": 0,
+    "explain": "Mental simulation tests whether the candidate action is workable and exposes mismatches before execution."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

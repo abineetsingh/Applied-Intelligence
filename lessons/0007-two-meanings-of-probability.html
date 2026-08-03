@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 7 — Understand two meanings of probability</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 7 of 67 · 15–20 minutes</p>
+  <h1>Understand two meanings of probability</h1>
+  <p class="lede">Use frequency for repeatable processes and calibrated belief for one-off events.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Limited information never disappears. Exceptional judgment makes uncertainty explicit, comparable, updateable, and accountable.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What three elements turn a vague belief into a scoreable forecast?</p>
+    <details><summary>Reveal after answering</summary><p>A resolvable event, a deadline, and a numeric probability; a clear resolution rule makes the event genuinely scoreable.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Probability can describe a long-run rate in repeatable trials or a degree of belief about a unique event. The mathematics can be shared, but the evidence differs. Frequencies come from comparable repetitions; belief probabilities combine base rates, mechanisms, and judgment.</p>
+  <ol>
+      <li>Ask whether the event has a stable repeatable process.</li>
+      <li>If yes, estimate from relevant frequencies and uncertainty around them.</li>
+      <li>If no, decompose the event and use comparable reference classes.</li>
+      <li>Keep aleatory randomness separate from epistemic ignorance.</li>
+      <li>State which interpretation supports your number.</li>
+  </ol>
+
+  <h2>Worked case: a startup raising its next round</h2>
+  <div class="note"><p>The company raises only once under its exact conditions, but the forecast is not arbitrary. Start with rates for similar companies at the same stage, then adjust for runway, growth, market, team, and investor access. The result is a calibrated belief grounded in frequencies.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Classify ten uncertainties as mostly repeatable randomness, mostly missing knowledge, or both. For each, name one data source and one mechanism that could inform it.</p>
+    <p><strong>Deliverable:</strong> A three-column uncertainty inventory with evidence sources.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>When a market regime feels unprecedented, separate truly new mechanisms from features that still belong to older reference classes.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a free, transparent foundation for probability, data, and statistical reasoning.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/probability-and-updating.html">Probability and Updating</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "A unique event probability should begin where?",
+    "options": [
+      "Pure intuition alone",
+      "Relevant reference classes",
+      "Maximum confidence always",
+      "Historical analogy only"
+    ],
+    "answer": 1,
+    "explain": "Unique events still belong to broader classes. Case-specific evidence should adjust, not erase, the starting rate."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

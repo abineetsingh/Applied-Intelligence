@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 50 — Treat technical patterns as hypotheses</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 50 of 67 · 15–20 minutes</p>
+  <h1>Treat technical patterns as hypotheses</h1>
+  <p class="lede">Convert chart vocabulary into explicit features and mechanisms that can fail.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Market judgment demands falsifiable edges, honest chronology, realistic costs, survival-focused sizing, and resistance to backtest seduction.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Why is arithmetic average return insufficient for comparing strategies?</p>
+    <details><summary>Reveal after answering</summary><p>It hides compounding, volatility, drawdown, skew, tails, correlation, and whether the path remains survivable.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Technical analysis can propose features of price and volume, but names and visual discretion invite hindsight. Formalize the pattern, hypothesize a mechanism, and compare predictive performance against simple alternatives after costs.</p>
+  <ol>
+      <li>Define the visual pattern numerically.</li>
+      <li>Specify when pattern recognition occurs in real time.</li>
+      <li>Propose a mechanism and rival explanation.</li>
+      <li>Choose outcome, horizon, and baseline.</li>
+      <li>Test robustness and false discovery.</li>
+  </ol>
+
+  <h2>Worked case: a breakout pattern</h2>
+  <div class="note"><p>Define breakout as a close above the prior 60-day high with volume above a rolling percentile, executed next period. Possible mechanisms include information diffusion and forced positioning; rivals include volatility exposure and selection after obvious winners.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Formalize one pattern you use or find interesting. Have another person or deterministic function label examples without seeing future returns.</p>
+    <p><strong>Deliverable:</strong> A pattern specification, mechanism, rival, benchmark, and labeling test.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Product pattern language—viral, sticky, platform—also needs numerical definitions and causal mechanisms.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://experts.illinois.edu/en/publications/what-do-we-know-about-the-profitability-of-technical-analysis/">What do we know about technical analysis? — Park & Irwin</a> — a peer-reviewed review finding mixed evidence and recurring problems with data snooping, rule selection, risk, and costs.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/honest-strategy-test.html">Honest Strategy Test</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What makes a chart pattern testable?",
+    "options": [
+      "Rules fixed before outcomes",
+      "Examples selected after rallies",
+      "Labels depend on hindsight",
+      "Mechanism remains purely mystical"
+    ],
+    "answer": 0,
+    "explain": "Real-time fixed rules prevent future outcomes from shaping which patterns count."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 24 — Statistical versus practical importance</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 24 of 67 · 15–20 minutes</p>
+  <h1>Statistical versus practical importance</h1>
+  <p class="lede">A tiny effect can be certain and useless; a valuable effect can remain uncertain.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Exceptional judgment distinguishes a noisy estimate from evidence strong enough to change a costly action.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>State the p-value inversion error in symbols or words.</p>
+    <details><summary>Reveal after answering</summary><p>P(data | null) is not P(null | data); a p-value does not directly give the probability that the null hypothesis is true.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Statistical significance depends on effect, noise, sample size, and procedure. Practical importance depends on value, costs, risk, and alternatives. Large samples can detect trivial effects; small samples can leave valuable effects unresolved.</p>
+  <ol>
+      <li>Define the action threshold before looking at significance.</li>
+      <li>Translate effect size into money, time, risk, or user outcome.</li>
+      <li>Include implementation and opportunity costs.</li>
+      <li>Inspect uncertainty around net value.</li>
+      <li>Choose whether to act, test, or ignore.</li>
+  </ol>
+
+  <h2>Worked case: a measurable latency improvement</h2>
+  <div class="note"><p>A 5-millisecond improvement may be statistically decisive across billions of requests yet irrelevant to users—or highly valuable if it crosses a real-time bidding deadline. Context converts effect size into utility.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Take one significant or impressive metric. Convert its effect into a unit the decision values and subtract implementation cost. Evaluate low, central, and high estimates.</p>
+    <p><strong>Deliverable:</strong> A practical-impact calculation and action threshold.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>A statistically detectable trading edge below transaction costs has negative practical value.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a simulation-forward introduction to estimation, testing, power, and statistical inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/inference-checklist.html">Inference Checklist</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What determines practical importance?",
+    "options": [
+      "Consequences relative to costs",
+      "Sample size taken alone",
+      "P-value taken entirely alone",
+      "Chart color chosen carefully"
+    ],
+    "answer": 0,
+    "explain": "Practical importance is about consequences, tradeoffs, and alternatives—not a statistical label."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 8 — Combine and condition probabilities</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 8 of 67 · 15–20 minutes</p>
+  <h1>Combine and condition probabilities</h1>
+  <p class="lede">Stop confusing “and,” “or,” and “given”—three words that change the calculation.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Limited information never disappears. Exceptional judgment makes uncertainty explicit, comparable, updateable, and accountable.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What is the difference between aleatory uncertainty and epistemic uncertainty?</p>
+    <details><summary>Reveal after answering</summary><p>Aleatory uncertainty is variation inherent in a process; epistemic uncertainty comes from missing knowledge and may shrink with evidence.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>The complement covers what does not happen. A joint event requires multiple things together. A conditional probability restricts attention to cases where another fact is true. Most real mistakes come from using the right number for the wrong relationship.</p>
+  <ol>
+      <li>Translate the sentence into events A and B.</li>
+      <li>Mark the operator: not, and, or, or given.</li>
+      <li>Draw 100 hypothetical cases if notation feels abstract.</li>
+      <li>Never multiply probabilities unless independence is justified or conditionals are used.</li>
+      <li>Check that the result lies between zero and one.</li>
+  </ol>
+
+  <h2>Worked case: a product funnel</h2>
+  <div class="note"><p>If 40% activate and 50% of activated users retain, retention among all signups is 0.40 × 0.50 = 20% only because the second number is conditional on activation. Treating 50% as an unconditional rate would misstate the funnel.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Take one funnel or trading rule and express four quantities: event, complement, joint event, and conditional event. Explain each in plain English before calculating.</p>
+    <p><strong>Deliverable:</strong> Four event statements plus a 100-case diagram.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>For trading, distinguish P(price rises and signal fires) from P(price rises given signal fires). Only the latter begins to describe predictive usefulness.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a free, transparent foundation for probability, data, and statistical reasoning.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/probability-and-updating.html">Probability and Updating</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "Which phrase signals conditional probability?",
+    "options": [
+      "A and B",
+      "A or B",
+      "A given B",
+      "A excludes B"
+    ],
+    "answer": 2,
+    "explain": "“Given B” restricts the reference set to cases where B occurred."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

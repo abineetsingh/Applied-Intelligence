@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 28 — Draw a causal diagram</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 28 of 67 · 15–20 minutes</p>
+  <h1>Draw a causal diagram</h1>
+  <p class="lede">Expose assumed mechanisms and backdoor paths before touching the data.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Strategic action changes systems. Causal reasoning predicts what an intervention will do, not merely what variables accompany one another.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Why can feature usage predict retention without causing retention?</p>
+    <details><summary>Reveal after answering</summary><p>Motivation or another common cause may increase both usage and retention, creating association without an intervention effect.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A causal diagram represents variables as nodes and direct causal assumptions as arrows. It clarifies which paths create the effect of interest, which create confounding, and which variables should not be adjusted for.</p>
+  <ol>
+      <li>Place treatment and outcome first.</li>
+      <li>Add common causes of both.</li>
+      <li>Add variables caused by treatment.</li>
+      <li>Add selection mechanisms affecting observation.</li>
+      <li>Use the graph to choose design and adjustment—not to decorate analysis.</li>
+  </ol>
+
+  <h2>Worked case: discounts and customer retention</h2>
+  <div class="note"><p>Salespeople give discounts to accounts judged likely to churn. Churn risk causes discount and retention, creating confounding. Comparing discounted with full-price accounts directly may make discounts look harmful even if they help within risk levels.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Draw a five-to-eight-node causal graph for one product decision. Mark treatment, outcome, confounders, mediators, and selection variables in different colors.</p>
+    <p><strong>Deliverable:</strong> A causal diagram plus the adjustment set you would consider.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Draw the graph behind “sentiment predicts price.” News, positioning, liquidity, and price itself may affect both measured sentiment and returns.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://www.hsph.harvard.edu/miguel-hernan/wp-content/uploads/sites/1268/2024/04/hernanrobins_WhatIf_26apr24.pdf">Causal Inference: What If — Hernán & Robins</a> — a free, rigorous treatment of counterfactuals, randomized experiments, and observational causal inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/causal-reasoning-checklist.html">Causal Reasoning Checklist</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What creates a backdoor path?",
+    "options": [
+      "Common causes of variables",
+      "Treatment causing final outcome",
+      "Random assignment of treatment",
+      "Accurate measurement of outcomes"
+    ],
+    "answer": 0,
+    "explain": "A common cause opens a noncausal association between treatment and outcome that can confound their relationship."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

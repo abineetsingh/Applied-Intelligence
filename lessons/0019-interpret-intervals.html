@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 19 — Interpret intervals</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 19 of 67 · 15–20 minutes</p>
+  <h1>Interpret intervals</h1>
+  <p class="lede">Make uncertainty visible as a range, then ask whether it changes the action.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Data becomes leverage only when you understand how it was generated, how it varies, and what selection hid from view.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Why can biographies of successful executives mislead even when every fact is accurate?</p>
+    <details><summary>Reveal after answering</summary><p>The sample selects winners, omits comparable failures, and reconstructs choices after outcomes, so causal lessons are distorted.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Point estimates imply more knowledge than samples support. An interval expresses a range compatible with the model and data. Its exact interpretation depends on method, but decision use is consistent: test actions across plausible values.</p>
+  <ol>
+      <li>Report the estimate and interval together.</li>
+      <li>Name what uncertainty the interval includes and excludes.</li>
+      <li>Compare the entire range with decision thresholds.</li>
+      <li>Avoid turning every value inside into equally likely truth.</li>
+      <li>Gather more data only if narrower uncertainty can change action.</li>
+  </ol>
+
+  <h2>Worked case: an experiment with modest uplift</h2>
+  <div class="note"><p>Estimated conversion uplift is 4 points with a plausible interval from −1 to +9. If shipping is nearly free and reversible, acting may be sensible despite uncertainty. If migration is expensive and irreversible, the same interval may justify more evidence.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Take a point estimate you recently used. Construct an honest low-to-high range from sampling error, measurement uncertainty, or scenarios. Evaluate the action at both ends.</p>
+    <p><strong>Deliverable:</strong> An interval, included uncertainties, excluded uncertainties, and threshold analysis.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Treat estimated trading edge as a range. Position sizing based on the optimistic endpoint is an overconfidence machine.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a modern foundation for sampling, distributions, simulation, and inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/data-claim-audit.html">Data-Claim Audit</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "How should an interval guide action?",
+    "options": [
+      "Test decisions across range",
+      "Choose midpoint with certainty",
+      "Ignore endpoints as impossible",
+      "Wait until width vanishes"
+    ],
+    "answer": 0,
+    "explain": "A robust action performs acceptably across plausible values; fragile actions require better evidence or protection."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

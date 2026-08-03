@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 40 — Mixed case: build, test, wait, or stop</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 40 of 67 · 15–20 minutes</p>
+  <h1>Mixed case: build, test, wait, or stop</h1>
+  <p class="lede">Combine expected value, utility, information, asymmetry, and reversibility.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Insight becomes judgment only when it changes action while respecting values, downside, reversibility, and the cost of delay.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Distinguish robust from optimal in one sentence.</p>
+    <details><summary>Reveal after answering</summary><p>An optimal action performs best under one model; a robust action remains acceptable across several plausible models or parameter values.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A high-quality choice integrates the whole decision architecture. The arithmetic disciplines intuition, while sensitivity reveals which assumptions actually drive the recommendation.</p>
+  <ol>
+      <li>Frame actions and objectives.</li>
+      <li>Build a small sequential tree.</li>
+      <li>Estimate values and ruin constraints.</li>
+      <li>Price the next evidence step.</li>
+      <li>Choose a robust action with a review trigger.</li>
+  </ol>
+
+  <h2>Worked case: an enterprise product with one eager buyer</h2>
+  <div class="note"><p>The buyer offers a paid pilot but requests custom infrastructure. Options are full build, manual pilot, wait for more buyers, or stop. The manual pilot caps cost, tests workflow and budget, and preserves the choice to build—unless customization creates commitments that contaminate learning.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Analyze the case in fifteen minutes. Put rough numbers on the tree, identify the ruin constraint, and state what pilot evidence would trigger scaling.</p>
+    <p><strong>Deliverable:</strong> A decision tree, VOI estimate, asymmetry design, and action memo.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Use the same structure for a market thesis: reject, observe, paper-test, enter small, or scale—each is a distinct action.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://ocw.mit.edu/courses/ids-333-risk-and-decision-analysis-fall-2021/">Risk and Decision Analysis — MIT OpenCourseWare</a> — a rigorous course on decision trees, utility, sensitivity, and value of information.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/decision-under-uncertainty.html">Decision Under Uncertainty</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "Which action best preserves optionality?",
+    "options": [
+      "Run bounded paid pilot",
+      "Build complete platform immediately",
+      "Wait without gathering evidence",
+      "Reject customer without analysis"
+    ],
+    "answer": 0,
+    "explain": "A bounded paid pilot tests costly behavior and workflow while limiting irreversible investment."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 13 — Identify the data-generating process</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 13 of 67 · 15–20 minutes</p>
+  <h1>Identify the data-generating process</h1>
+  <p class="lede">Ask how rows came to exist before calculating anything from them.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Data becomes leverage only when you understand how it was generated, how it varies, and what selection hid from view.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Why should correlated signals be discounted during an update?</p>
+    <details><summary>Reveal after answering</summary><p>They contain overlapping information because shared causes can produce them together; counting each fully exaggerates evidence.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A dataset is the output of a process: who entered, what was measured, when measurement occurred, and which events made records visible. The same columns can mean different things under experiments, surveys, logs, convenience samples, or survivor-only databases.</p>
+  <ol>
+      <li>Name the unit represented by one row.</li>
+      <li>Trace how a unit becomes eligible, observed, recorded, and retained.</li>
+      <li>Identify human or system choices at each step.</li>
+      <li>Mark missing paths that produce no row.</li>
+      <li>Restrict conclusions to the process actually observed.</li>
+  </ol>
+
+  <h2>Worked case: support tickets as product evidence</h2>
+  <div class="note"><p>Ticket counts reflect product problems, willingness to contact support, account value, channel discovery, and support categorization. Silent churners create no ticket. A falling ticket count could signal improvement—or users giving up.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Choose one dashboard you use. Draw the pipeline from real-world event to displayed metric, including eligibility filters, joins, missing events, and manual classifications.</p>
+    <p><strong>Deliverable:</strong> A data-provenance diagram and three ways the metric could mislead.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Before testing a trading signal, trace vendor adjustments, survivorship rules, timestamps, corporate actions, and missing instruments.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a modern foundation for sampling, distributions, simulation, and inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/data-claim-audit.html">Data-Claim Audit</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What should precede metric interpretation?",
+    "options": [
+      "Inspect generation process first",
+      "Calculate averages immediately now",
+      "Choose preferred narrative early",
+      "Remove inconvenient records quietly"
+    ],
+    "answer": 0,
+    "explain": "Meaning and bias depend on how observations entered the dataset. Calculation comes afterward."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

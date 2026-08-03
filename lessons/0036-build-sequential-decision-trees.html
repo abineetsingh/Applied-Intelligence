@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 36 — Build sequential decision trees</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 36 of 67 · 15–20 minutes</p>
+  <h1>Build sequential decision trees</h1>
+  <p class="lede">Model choices, uncertain events, and future options in the order they occur.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Insight becomes judgment only when it changes action while respecting values, downside, reversibility, and the cost of delay.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What is the difference between an objective and an alternative?</p>
+    <details><summary>Reveal after answering</summary><p>An objective states what matters; an alternative is an action available for pursuing those objectives.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Decision trees separate choices from chance events and show how information changes later options. Solve backward: evaluate terminal outcomes, average chance branches, then select the best action at each decision node.</p>
+  <ol>
+      <li>Draw the first decision node.</li>
+      <li>Add chance events that follow each action.</li>
+      <li>Add later choices available after observing events.</li>
+      <li>Assign probabilities and utilities at endpoints.</li>
+      <li>Fold the tree backward and test sensitivity.</li>
+  </ol>
+
+  <h2>Worked case: build versus prototype versus interview</h2>
+  <div class="note"><p>A founder can build now, run a concierge prototype, or conduct interviews. The prototype costs time but reveals demand before the full build, preserving a later choice. Its value comes partly from information and partly from delaying irreversible commitment.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Draw a two-stage tree for a live decision with at least one information-gathering action and one later choice. Solve it backward using rough values.</p>
+    <p><strong>Deliverable:</strong> A decision tree and the branch where information changes action.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>A staged position entry is a sequential decision only if later sizing depends on new evidence rather than price-anchored emotion.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://ocw.mit.edu/courses/ids-333-risk-and-decision-analysis-fall-2021/">Risk and Decision Analysis — MIT OpenCourseWare</a> — a rigorous course on decision trees, utility, sensitivity, and value of information.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/decision-under-uncertainty.html">Decision Under Uncertainty</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "How are decision trees solved?",
+    "options": [
+      "Evaluate backward from outcomes",
+      "Choose earliest branch intuitively",
+      "Average decision nodes randomly",
+      "Ignore later available options"
+    ],
+    "answer": 0,
+    "explain": "Backward induction values terminal outcomes, chance nodes, and then optimal choices at decision nodes."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

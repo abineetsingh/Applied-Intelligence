@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 9 — Start outside with reference classes</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 9 of 67 · 15–20 minutes</p>
+  <h1>Start outside with reference classes</h1>
+  <p class="lede">Anchor forecasts in comparable reality before the details seduce you.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Limited information never disappears. Exceptional judgment makes uncertainty explicit, comparable, updateable, and accountable.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Why is multiplying two unconditional probabilities often wrong?</p>
+    <details><summary>Reveal after answering</summary><p>The events may be dependent. Use P(A and B) = P(A) × P(B given A), or justify independence explicitly.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>The inside view builds a story from case details. The outside view asks what happened in similar cases. A useful reference class is neither so broad that it ignores mechanisms nor so narrow that it contains no data.</p>
+  <ol>
+      <li>Define the target event and horizon.</li>
+      <li>List three candidate reference classes from broad to narrow.</li>
+      <li>Identify mechanisms that make cases genuinely comparable.</li>
+      <li>Begin with the class rate and document each adjustment.</li>
+      <li>Run the forecast under a second defensible class.</li>
+  </ol>
+
+  <h2>Worked case: estimating product delivery</h2>
+  <div class="note"><p>The team estimates six weeks by summing ideal task times. The outside view examines the last ten similarly scoped launches, whose median was eleven weeks. Specific improvements may justify an adjustment, but the burden is now explicit rather than buried in optimism.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Choose a live forecast. Find three plausible reference classes and calculate or approximate their base rates. Explain which class best matches the causal structure.</p>
+    <p><strong>Deliverable:</strong> A base-rate table and an adjustment ledger.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Before pursuing a startup problem, examine outcomes for products with similar buyer, urgency, distribution, and switching behavior—not merely the same industry label.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a free, transparent foundation for probability, data, and statistical reasoning.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/probability-and-updating.html">Probability and Updating</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What makes a reference class useful?",
+    "options": [
+      "Maximum sample size alone",
+      "Matching causal structure well",
+      "Identical surface details only",
+      "Most optimistic outcome rate"
+    ],
+    "answer": 1,
+    "explain": "Relevance depends on mechanisms and decision context, not size or visual similarity alone."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

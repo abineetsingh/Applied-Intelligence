@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 1 — Separate Decisions from Outcomes</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 1 of 67 · 15–20 minutes</p>
+  <h1>Separate the decision from the outcome</h1>
+  <p class="lede">Your first upgrade is to stop letting luck grade your reasoning.</p>
+
+  <div class="mission">
+    <span class="callout-label">Why this matters</span>
+    <p>Founders and traders receive noisy feedback. If you copy every lucky action and abandon every unlucky one, experience can make your judgment worse.</p>
+  </div>
+
+  <h2>The distinction</h2>
+  <p>A <strong>decision</strong> is the choice produced by a process using information available at the time. An <strong>outcome</strong> is what later happened, including factors you could not control.</p>
+  <p>This creates four possibilities:</p>
+
+  <table>
+    <thead><tr><th></th><th>Good outcome</th><th>Bad outcome</th></tr></thead>
+    <tbody>
+      <tr><th>Sound process</th><td>Earned success</td><td>Unlucky loss</td></tr>
+      <tr><th>Weak process</th><td>Lucky escape</td><td>Expected failure</td></tr>
+    </tbody>
+  </table>
+
+  <p>The purpose is not to excuse failure. It is to extract the right lesson. A single result gives weak evidence about a probabilistic process; repeated, well-recorded results give much stronger evidence.</p>
+
+  <h2>Retrieval check</h2>
+  <p>Classify both the process and the result. Do not let the result determine the process label.</p>
+  <div id="quiz"></div>
+
+  <h2>Use it on a live decision</h2>
+  <p>Choose a real decision you have not resolved yet. Keep it small enough to revisit within a few weeks. Recording it now prevents hindsight from changing what you remember knowing.</p>
+
+  <div class="exercise" id="decision-journal"></div>
+
+  <h2>Finish the lesson</h2>
+  <ol>
+    <li>Copy the decision record.</li>
+    <li>Paste it into your teacher chat for feedback.</li>
+    <li>Schedule the review date you named.</li>
+  </ol>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p>The Decision Education Foundation explains why process quality and outcome quality must be judged separately and offers a six-part decision-quality framework. Read <a href="https://www.decisioneducation.org/principles-of-decision-quality/defining-decision-quality">“Defining Decision Quality.”</a></p>
+  </div>
+
+  <p>If any distinction feels slippery—or your real decision does not fit the template—ask your teacher a follow-up question. Edge cases are where the useful learning begins.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav">
+      <p><a href="../reference/decision-record.html">Decision-record reference</a> · <a href="../reference/first-principles-loop.html">First-principles loop</a> · <a href="../CURRICULUM.md">View all 60 days</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+
+<script src="../assets/quiz.js"></script>
+<script src="../assets/decision-journal.js"></script>
+<script>
+  renderQuiz("quiz", [
+    {
+      prompt: "You interview 20 target users, predefine a demand threshold, and run a cheap test. Demand misses the threshold.",
+      options: ["Sound process, unfavorable outcome", "Weak process, unfavorable outcome", "Sound process, favorable outcome", "Weak process, favorable outcome"],
+      answer: 0,
+      explain: "The disciplined process was sound. A failed test may be disappointing, but it bought useful evidence cheaply."
+    },
+    {
+      prompt: "You buy a concentrated position because an influencer sounds certain. The price doubles the next week.",
+      options: ["Sound process, unfavorable outcome", "Weak process, unfavorable outcome", "Sound process, favorable outcome", "Weak process, favorable outcome"],
+      answer: 3,
+      explain: "The gain does not repair the unsupported thesis or uncontrolled exposure. This was favorable luck."
+    },
+    {
+      prompt: "You estimate the odds, confirm positive expected value, cap possible loss, and take the position. It loses.",
+      options: ["Sound process, unfavorable outcome", "Weak process, unfavorable outcome", "Sound process, favorable outcome", "Weak process, favorable outcome"],
+      answer: 0,
+      explain: "A positive-expectation action can lose. The key future question is whether the estimates were honest and calibrated."
+    },
+    {
+      prompt: "You build for six months without testing the customer problem. At launch, almost nobody returns.",
+      options: ["Sound process, unfavorable outcome", "Weak process, unfavorable outcome", "Sound process, favorable outcome", "Weak process, favorable outcome"],
+      answer: 1,
+      explain: "The weak process exposed months of effort before testing the central uncertainty, and the result was unfavorable."
+    }
+  ]);
+  renderDecisionJournal("decision-journal", "reasoning-course-decision-0001");
+</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* Shared stylesheet for all course lessons and reference docs.
+   Tufte-inspired: generous margins, readable measure, restrained color. */
+
+:root {
+  --bg: #fffff8;
+  --ink: #111111;
+  --muted: #555550;
+  --accent: #a00000;       /* used sparingly: links, key marks */
+  --rule: #ddddd0;
+  --code-bg: #f4f4ec;
+  --good: #1a7f37;
+  --bad: #b42318;
+  --note-bg: #eef3f8;
+  --note-edge: #4a6fa5;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 17px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  line-height: 1.55;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 2.2rem 0 0.8rem;
+}
+h1 { font-size: 2rem; font-style: italic; margin-top: 0.5rem; }
+h2 { font-size: 1.45rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.3rem; }
+h3 { font-size: 1.15rem; font-style: italic; }
+
+p, li { max-width: 38rem; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid #d8b0b0; }
+a:hover { border-bottom-color: var(--accent); }
+
+.kicker {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.lede { font-size: 1.12rem; font-style: italic; color: var(--muted); }
+
+code, pre {
+  font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.86em;
+}
+code { background: var(--code-bg); padding: 0.1em 0.3em; border-radius: 3px; }
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  overflow-x: auto;
+  line-height: 1.45;
+}
+pre code { background: none; padding: 0; }
+
+table {
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  width: 100%;
+  font-size: 0.95rem;
+}
+th, td {
+  text-align: left;
+  padding: 0.45rem 0.8rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+th {
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Callouts */
+.note, .mission, .ml-link {
+  margin: 1.6rem 0;
+  padding: 0.9rem 1.2rem;
+  border-left: 3px solid var(--note-edge);
+  background: var(--note-bg);
+  border-radius: 0 6px 6px 0;
+}
+.note p:first-child, .mission p:first-child, .ml-link p:first-child { margin-top: 0; }
+.note p:last-child, .mission p:last-child, .ml-link p:last-child { margin-bottom: 0; }
+.mission { border-left-color: var(--accent); background: #f8efef; }
+.ml-link { border-left-color: #6a4fa5; background: #f2eff8; }
+.callout-label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
+/* Quiz (rendered by quiz.js) */
+.quiz { margin: 2rem 0; }
+.quiz-q {
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 1.1rem 1.3rem;
+  margin: 1.2rem 0;
+  background: #fdfdf4;
+}
+.quiz-q .q-num {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.quiz-options { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.8rem; }
+.quiz-options button {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9rem;
+  padding: 0.45rem 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+.quiz-options button:hover:not(:disabled) { border-color: var(--ink); }
+.quiz-options button:disabled { cursor: default; opacity: 0.75; }
+.quiz-options button.correct { border-color: var(--good); background: #e6f4ea; opacity: 1; }
+.quiz-options button.incorrect { border-color: var(--bad); background: #fbe9e7; opacity: 1; }
+.quiz-feedback { margin-top: 0.8rem; font-size: 0.95rem; display: none; }
+.quiz-feedback.shown { display: block; }
+.quiz-feedback .verdict { font-weight: 600; }
+.quiz-feedback .verdict.good { color: var(--good); }
+.quiz-feedback .verdict.bad { color: var(--bad); }
+.quiz-score {
+  font-style: italic;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+
+/* Exercises and persistent decision journal */
+.exercise {
+  margin: 1.8rem 0;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: #fdfdf4;
+}
+.journal-field { display: block; margin: 1rem 0; }
+.journal-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.journal-field textarea, .journal-field input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+.journal-field textarea:focus, .journal-field input:focus {
+  outline: 2px solid #c8d6e8;
+  border-color: var(--note-edge);
+}
+.journal-actions { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; }
+.journal-actions button {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font: inherit;
+}
+.journal-status { color: var(--muted); font-size: 0.88rem; }
+.equation {
+  margin: 1rem 0;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  background: var(--code-bg);
+  border-radius: 6px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* Footer nav */
+.lesson-footer {
+  margin-top: 3.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.lesson-nav p { line-height: 1.8; }
+.authorship { font-size: 0.88rem; letter-spacing: 0.01em; }
+
+/* Book-style table of contents */
+.book-toc { margin-top: 2rem; }
+.toc-phase { margin: 2rem 0 2.5rem; }
+.toc-phase ol { list-style: none; margin: 0; padding: 0; }
+.toc-phase li { border-bottom: 1px solid var(--rule); }
+.toc-phase li:first-child { border-top: 1px solid var(--rule); }
+.toc-phase li a {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.65rem 0.25rem;
+  border-bottom: 0;
+}
+.toc-phase li a:hover { background: var(--code-bg); }
+.toc-number { color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; }
+
+/* Print */
+@media print {
+  html { font-size: 11pt; }
+  main { max-width: 100%; padding: 0; }
+  .quiz, .no-print, .lesson-nav { display: none; }
+  a { color: var(--ink); border-bottom: none; }
+  pre { border: 1px solid #999; }
+}

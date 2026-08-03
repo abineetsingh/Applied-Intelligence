@@ -1,0 +1,186 @@
+:root {
+  --progress-green: #247a3d;
+  --progress-green-soft: #e4f1e7;
+  --progress-yellow: #b9820d;
+  --progress-yellow-soft: #fbf0c9;
+  --progress-navy: #17324d;
+  --progress-track: #dfdfd5;
+  --progress-danger: #a13b2e;
+}
+
+.cp-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.cp-course-progress { margin: 1.8rem 0 2.1rem; }
+.cp-course-summary {
+  display: flex;
+  align-items: center;
+  gap: 1.35rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 9px;
+  background: #fffefa;
+}
+.cp-course-summary-copy strong {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+}
+.cp-course-summary-copy p { margin: 0.25rem 0 0; color: var(--muted); }
+
+.cp-progress-ring {
+  --cp-progress: 0%;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 6.75rem;
+  height: 6.75rem;
+  border-radius: 50%;
+  background: conic-gradient(var(--progress-green) 0 var(--cp-progress), var(--progress-track) var(--cp-progress) 100%);
+}
+.cp-progress-ring::before {
+  content: "";
+  grid-area: 1 / 1;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: var(--bg);
+}
+.cp-progress-ring-value {
+  z-index: 1;
+  grid-area: 1 / 1;
+  font: 750 1.15rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.cp-phase-bar { display: flex; gap: 0.2rem; width: 100%; height: 0.5rem; margin: 1.2rem 0 0.45rem; }
+.cp-phase-segment { position: relative; overflow: hidden; min-width: 0.18rem; border-radius: 999px; background: var(--progress-track); }
+.cp-phase-segment-fill { display: block; height: 100%; border-radius: inherit; background: var(--progress-green); }
+.cp-phase-bar-label { margin: 0; color: var(--muted); font: 600 0.72rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+.cp-continue-card { margin: 1.2rem 0; padding: 1rem 1.15rem; border-left: 3px solid var(--progress-green); background: var(--progress-green-soft); }
+.cp-continue-card p { margin: 0.35rem 0 0.75rem; }
+.cp-continue-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 700; }
+.cp-continue-link {
+  display: inline-block;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--progress-green);
+  border-radius: 7px;
+  color: #fff;
+  background: var(--progress-green);
+  font: 700 0.82rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.cp-continue-link:hover { color: #fff; background: #175d2d; }
+
+.book-toc .toc-phase li > a.cp-lesson-row,
+.book-toc .toc-phase li > .cp-planned-row {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.25rem;
+}
+.book-toc .toc-phase li > a.cp-lesson-row { color: var(--progress-navy); border-bottom: 0; }
+.cp-planned-row { color: var(--muted); }
+.cp-progress-bubble { display: inline-block; width: 1rem; height: 1rem; border: 2px solid #98988e; border-radius: 50%; }
+.cp-progress-bubble[data-state="in-progress"] { border-color: var(--progress-yellow); background: linear-gradient(90deg, var(--progress-yellow) 0 50%, transparent 50% 100%); }
+.cp-progress-bubble[data-state="completed"] { border-color: var(--progress-green); background: var(--progress-green); box-shadow: inset 0 0 0 3px var(--bg); }
+.cp-planned-badge { padding: 0.16rem 0.4rem; border: 1px solid var(--rule); border-radius: 999px; color: var(--muted); font: 650 0.62rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-transform: uppercase; }
+
+.cp-course-reset { margin-top: 2.2rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); text-align: center; }
+.cp-reset-link { padding: 0; border: 0; color: var(--muted); background: transparent; cursor: pointer; font: 600 0.78rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-decoration: underline; }
+.cp-reset-link:hover { color: var(--ink); }
+.cp-course-reset-button {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--progress-danger);
+  border-radius: 7px;
+  color: var(--progress-danger);
+  background: #fbf0ed;
+  font: 700 0.92rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+.cp-course-reset-button:hover { border-color: var(--progress-danger); color: #fff; background: var(--progress-danger); text-decoration: none; }
+.cp-reset-success {
+  margin: 1rem 0;
+  padding: 0.7rem 0.9rem;
+  border-left: 3px solid var(--progress-green);
+  color: #235e33;
+  background: var(--progress-green-soft);
+  font: 650 0.82rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.cp-lesson-utility { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.7rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--rule); }
+.cp-lesson-utility a { font: 650 0.78rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.cp-lesson-heading-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.cp-lesson-state { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.42rem 0.65rem; border: 1px solid #d2af57; border-radius: 999px; color: #79580a; background: var(--progress-yellow-soft); font: 750 0.66rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 0.04em; text-transform: uppercase; }
+.cp-lesson-state::before { content: ""; width: 0.62rem; height: 0.62rem; border: 2px solid currentColor; border-radius: 50%; background: linear-gradient(90deg, var(--progress-yellow) 0 50%, transparent 50% 100%); }
+.cp-lesson-state[data-state="completed"] { border-color: var(--progress-green); color: var(--progress-green); background: var(--progress-green-soft); }
+.cp-lesson-state[data-state="completed"]::before { background: var(--progress-green); box-shadow: inset 0 0 0 2px var(--progress-green-soft); }
+
+.cp-completion-card { margin: 2.4rem 0 0; padding: 1.2rem 1.25rem; border: 1px solid var(--rule); border-radius: 9px; background: #fffefa; }
+.cp-completion-card h2 { margin: 0.55rem 0 0.7rem; border: 0; padding: 0; font-size: 1.2rem; }
+.cp-complete-button { width: 100%; margin-top: 0.35rem; padding: 0.85rem 1rem; border: 1px solid var(--progress-green); border-radius: 7px; color: var(--progress-green); background: var(--progress-green-soft); cursor: pointer; font: 700 0.92rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.cp-complete-button:hover { color: #fff; background: var(--progress-green); }
+.cp-completion-note { margin: 0.65rem 0 0; color: var(--muted); text-align: center; font-size: 0.82rem; }
+.cp-lesson-nav-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.65rem; margin-top: 1rem; }
+.cp-lesson-nav-button { display: flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: 0.65rem 0.75rem; border: 1px solid var(--progress-navy); border-radius: 7px; color: var(--progress-navy); background: #f5f7f8; font: 700 0.76rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.3; text-align: center; }
+.cp-lesson-nav-button:hover { color: #fff; background: var(--progress-navy); }
+.cp-lesson-nav-button.is-disabled { border-color: var(--rule); color: var(--muted); background: #f8f8f3; }
+
+.cp-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: rgba(23, 23, 18, 0.48);
+}
+.cp-modal-backdrop[hidden] { display: none; }
+.cp-modal {
+  width: min(100%, 26rem);
+  padding: 1.35rem;
+  border: 1px solid #cdbdb6;
+  border-radius: 10px;
+  background: var(--bg);
+  box-shadow: 0 22px 70px rgba(20, 20, 15, 0.28);
+}
+.cp-modal h2 {
+  margin: 0.55rem 0 0.7rem;
+  padding: 0;
+  border: 0;
+  font: 750 1.05rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.cp-modal p { color: var(--muted); font-size: 0.9rem; }
+.cp-modal button {
+  width: 100%;
+  margin-top: 0.7rem;
+  padding: 0.72rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font: 700 0.82rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.cp-modal-danger { border: 1px solid var(--progress-danger); color: var(--progress-danger); background: #fbf0ed; }
+.cp-modal-danger:hover { color: #fff; background: var(--progress-danger); }
+.cp-modal-cancel { border: 1px solid var(--progress-navy); color: var(--progress-navy); background: #f5f7f8; }
+.cp-modal-cancel:hover { color: #fff; background: var(--progress-navy); }
+
+@media (max-width: 36rem) {
+  .cp-course-summary { align-items: flex-start; gap: 1rem; }
+  .cp-progress-ring { width: 5.5rem; height: 5.5rem; }
+  .cp-progress-ring::before { width: 4rem; height: 4rem; }
+  .cp-lesson-nav-grid { grid-template-columns: 1fr; }
+}
+@media print { .cp-completion-card, .cp-continue-card, .cp-course-reset, .cp-lesson-utility, .cp-modal-backdrop, .cp-phase-bar { display: none !important; } }

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 34 — Calculate expected value</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 34 of 67 · 15–20 minutes</p>
+  <h1>Calculate expected value</h1>
+  <p class="lede">Compare uncertain actions using probability-weighted consequences.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Insight becomes judgment only when it changes action while respecting values, downside, reversibility, and the cost of delay.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>In sparse diagnosis, what makes an evidence request valuable?</p>
+    <details><summary>Reveal after answering</summary><p>It is inexpensive and produces different predicted results under competing mechanisms, so it can change their ranking or the action.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Expected value multiplies each possible outcome by its probability and sums the results. It is most useful for repeated or portfolio decisions and for making assumptions explicit. It does not by itself represent risk tolerance or ruin.</p>
+  <ol>
+      <li>List mutually exclusive outcomes for each action.</li>
+      <li>Assign probabilities that sum to one.</li>
+      <li>Express consequences in a common decision-relevant unit.</li>
+      <li>Multiply and sum.</li>
+      <li>Stress-test probabilities and omitted outcomes.</li>
+  </ol>
+
+  <h2>Worked case: a two-week validation sprint</h2>
+  <div class="note"><p>A sprint costs $8,000. With 30% probability it reveals strong demand worth an estimated $100,000 in option value, 40% it yields modest learning worth $10,000, and 30% it yields no benefit. Rough EV is $30,000 + $4,000 − $8,000 = $26,000 before risk and opportunity cost.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Build a three-outcome EV model for one live choice. Calculate a break-even probability for the upside case.</p>
+    <p><strong>Deliverable:</strong> An outcome table, expected value, and break-even probability.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>A trade has positive EV only after realistic win probability, payoff distribution, slippage, fees, and adverse selection.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://ocw.mit.edu/courses/ids-333-risk-and-decision-analysis-fall-2021/">Risk and Decision Analysis — MIT OpenCourseWare</a> — a rigorous course on decision trees, utility, sensitivity, and value of information.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/decision-under-uncertainty.html">Decision Under Uncertainty</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What does expected value combine?",
+    "options": [
+      "Probabilities weighted by consequences",
+      "Confidence multiplied by charisma",
+      "Outcomes selected after observation",
+      "Best cases minus worst"
+    ],
+    "answer": 0,
+    "explain": "Expected value is the sum of each outcome's consequence multiplied by its probability."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

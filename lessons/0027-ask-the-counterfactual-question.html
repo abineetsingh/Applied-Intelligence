@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 27 — Ask the counterfactual question</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 27 of 67 · 15–20 minutes</p>
+  <h1>Ask the counterfactual question</h1>
+  <p class="lede">Define causation as the difference an action makes compared with a credible alternative.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Strategic action changes systems. Causal reasoning predicts what an intervention will do, not merely what variables accompany one another.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Why was the AI engagement result in Lesson 26 exploratory rather than confirmatory?</p>
+    <details><summary>Reveal after answering</summary><p>The team selected one winner among many metrics and stopped flexibly, so a new fixed test was needed to separate effect from selection noise.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A causal effect compares potential outcomes under different actions for the same unit. Because only one can be observed, causal reasoning constructs a credible comparison using randomization, design, assumptions, or natural variation.</p>
+  <ol>
+      <li>Name the intervention precisely.</li>
+      <li>Name the outcome and measurement horizon.</li>
+      <li>Write the alternative action or no-action condition.</li>
+      <li>Define the target population.</li>
+      <li>Ask what makes the comparison group credible.</li>
+  </ol>
+
+  <h2>Worked case: customers using a feature retain more</h2>
+  <div class="note"><p>Feature users may retain because the feature helps, or motivated users may both discover the feature and remain. The causal question is whether enabling or encouraging comparable users to use it changes retention relative to not doing so.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Rewrite three causal claims from work or news as treatment, comparison, outcome, population, and horizon. Identify the unobserved counterfactual in each.</p>
+    <p><strong>Deliverable:</strong> Three explicit causal questions and their missing counterfactuals.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>A strategy's historical association with returns does not show that trading it will realize those returns after costs and crowd response.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://www.hsph.harvard.edu/miguel-hernan/wp-content/uploads/sites/1268/2024/04/hernanrobins_WhatIf_26apr24.pdf">Causal Inference: What If — Hernán & Robins</a> — a free, rigorous treatment of counterfactuals, randomized experiments, and observational causal inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/causal-reasoning-checklist.html">Causal Reasoning Checklist</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What defines a causal effect?",
+    "options": [
+      "Difference between potential outcomes",
+      "Correlation among measured variables",
+      "Prediction from historical patterns",
+      "Narrative matching observed sequence"
+    ],
+    "answer": 0,
+    "explain": "Causation compares what would happen under one action with what would happen under an alternative."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

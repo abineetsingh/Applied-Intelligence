@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 33 — Mixed case: diagnose from sparse clues</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 33 of 67 · 15–20 minutes</p>
+  <h1>Mixed case: diagnose from sparse clues</h1>
+  <p class="lede">Build and test causal explanations when evidence is incomplete and time is limited.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Strategic action changes systems. Causal reasoning predicts what an intervention will do, not merely what variables accompany one another.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What distinguishes a useful pre-mortem from imaginative pessimism?</p>
+    <details><summary>Reveal after answering</summary><p>Useful failure mechanisms change evidence gathering, safeguards, ownership, triggers, or allocation before failure occurs.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Sparse evidence demands disciplined hypothesis management. Separate symptoms from causes, preserve multiple mechanisms, use temporal order, and seek the observation with the highest ability to discriminate under time pressure.</p>
+  <ol>
+      <li>Write observations without causal language.</li>
+      <li>Generate at least three mechanisms.</li>
+      <li>Draw a minimal graph for each.</li>
+      <li>Predict one unseen fact under each mechanism.</li>
+      <li>Acquire the cheapest high-discrimination evidence.</li>
+  </ol>
+
+  <h2>Worked case: retention drops after a major release</h2>
+  <div class="note"><p>The release coincides with a new acquisition campaign and a billing change. Aggregate retention drops, support tickets rise, and established accounts appear stable. Candidate causes include poor-fit acquisition, release friction for new users, or payment failures. Cohort, event, and billing splits discriminate better than debating the timeline.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Analyze the case in twelve minutes. Rank three mechanisms, name their distinctive predictions, and request only two additional data cuts.</p>
+    <p><strong>Deliverable:</strong> An observation ledger, causal graph, ranked hypotheses, and two evidence requests.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Diagnose strategy drawdown similarly: separate regime change, execution drift, crowding, cost change, and ordinary variance using predictions each mechanism makes.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://www.hsph.harvard.edu/miguel-hernan/wp-content/uploads/sites/1268/2024/04/hernanrobins_WhatIf_26apr24.pdf">Causal Inference: What If — Hernán & Robins</a> — a free, rigorous treatment of counterfactuals, randomized experiments, and observational causal inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/causal-reasoning-checklist.html">Causal Reasoning Checklist</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "Which evidence request is strongest?",
+    "options": [
+      "Split retention by cohort",
+      "Collect more aggregate opinions",
+      "Wait for stronger narratives",
+      "Average every metric together"
+    ],
+    "answer": 0,
+    "explain": "A cohort split can distinguish acquisition composition from changes affecting all users."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

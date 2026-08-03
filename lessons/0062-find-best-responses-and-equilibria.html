@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 62 — Find best responses and equilibria</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 62 of 67 · 15–20 minutes</p>
+  <h1>Find best responses and equilibria</h1>
+  <p class="lede">Predict stable behavior by asking what each player would choose against every plausible opposing action.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Exceptional judgment anticipates adaptation. Game theory turns customers, competitors, partners, employees, and market participants from static assumptions into agents with incentives, information, and responses of their own.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What six elements turn a situation into a usable strategic game?</p>
+    <details><summary>Reveal after answering</summary><p>Players, feasible strategies, move order, available information, possible outcomes, and the payoffs each player actually experiences.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A best response is the highest-payoff action against a given opposing action. A Nash equilibrium is a strategy profile where no player benefits from changing alone. It predicts stability, not goodness: price wars, bank runs, and incompatible standards can all be equilibria.</p>
+  <ol>
+      <li>Remove strictly dominated strategies first.</li>
+      <li>Mark each player's best response to every opposing strategy.</li>
+      <li>Find cells where best responses intersect.</li>
+      <li>Test whether multiple equilibria create coordination risk.</li>
+      <li>Look for a rule or focal point that selects a better equilibrium.</li>
+  </ol>
+
+  <h2>Worked case: a platform chooses an integration standard</h2>
+  <div class="note"><p>Two complementary products gain most when they adopt the same standard, but each prefers its own. There are two stable equilibria and no purely technical answer. Early commitment, an industry convention, compatibility, or a credible neutral standard can coordinate expectations on one outcome.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Build a 2×2 payoff matrix for a real coordination or competition problem. Mark best responses, equilibria, dominated strategies, and the equilibrium you prefer.</p>
+    <p><strong>Deliverable:</strong> An annotated payoff matrix plus one equilibrium-selection intervention.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>In product adoption, ask not only whether your product is better but whether each participant expects the complementary participants to adopt.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://oyc.yale.edu/economics/econ-159/lecture-5">Nash Equilibrium: Bad Fashion and Bank Runs — Open Yale Courses</a> — applies equilibrium reasoning to coordination, conventions, and self-reinforcing outcomes.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/applied-game-theory-playbook.html">Applied Game Theory Playbook</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What does Nash equilibrium guarantee?",
+    "options": [
+      "No profitable unilateral deviation exists",
+      "The jointly best outcome occurs",
+      "Every player receives equal value",
+      "The outcome remains morally desirable"
+    ],
+    "answer": 0,
+    "explain": "Equilibrium means each strategy is a best response to the others; it need not maximize joint welfare."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

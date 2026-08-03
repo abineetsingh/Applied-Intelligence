@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 54 — Mixed case: reject, test, or fund</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 54 of 67 · 15–20 minutes</p>
+  <h1>Mixed case: reject, test, or fund</h1>
+  <p class="lede">Evaluate a strategy as a skeptical investment committee before risking capital.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Market judgment demands falsifiable edges, honest chronology, realistic costs, survival-focused sizing, and resistance to backtest seduction.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Why should position size use a conservative edge estimate?</p>
+    <details><summary>Reveal after answering</summary><p>Observed performance is noisy and selected; probabilities, dependence, costs, and tails are uncertain, so point-optimal sizing can overbet.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A strategy decision integrates hypothesis quality, chronology, costs, multiplicity, robustness, capacity, correlation, and sizing. “Promising” should map to a staged action, not immediate full exposure.</p>
+  <ol>
+      <li>Restate the edge and mechanism.</li>
+      <li>Audit data, chronology, and costs.</li>
+      <li>Reconstruct the complete search.</li>
+      <li>Stress regimes, parameters, and execution.</li>
+      <li>Choose reject, redesign, paper-test, pilot, or scale.</li>
+  </ol>
+
+  <h2>Worked case: a 2.1 Sharpe breakout system</h2>
+  <div class="note"><p>The result comes from 150 parameter combinations on current index members, uses same-close execution, and excludes slippage. Nearby parameters are weaker. Reject the performance claim; repair point-in-time data and execution, then treat the fixed rule as a new hypothesis for untouched data.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Write a go/no-go memo for the case with red flags, repair steps, promotion gates, and a maximum live pilot size.</p>
+    <p><strong>Deliverable:</strong> A skeptical strategy memo and evidence-gated capital plan.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Use this committee discipline on your own favorite thesis, where motivated reasoning is most likely.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://experts.illinois.edu/en/publications/what-do-we-know-about-the-profitability-of-technical-analysis/">What do we know about technical analysis? — Park & Irwin</a> — a peer-reviewed review finding mixed evidence and recurring problems with data snooping, rule selection, risk, and costs.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/honest-strategy-test.html">Honest Strategy Test</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What is the correct immediate action?",
+    "options": [
+      "Repair test before funding",
+      "Fund using reported Sharpe",
+      "Optimize parameters even further",
+      "Ignore point-in-time membership completely"
+    ],
+    "answer": 0,
+    "explain": "The current result is contaminated by survivorship, execution bias, and selection; it cannot justify capital."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

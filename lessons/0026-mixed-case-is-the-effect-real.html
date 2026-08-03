@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 26 — Mixed case: is the effect real?</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 26 of 67 · 15–20 minutes</p>
+  <h1>Mixed case: is the effect real?</h1>
+  <p class="lede">Integrate effect size, uncertainty, errors, power, and search flexibility.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Exceptional judgment distinguishes a noisy estimate from evidence strong enough to change a costly action.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Why is the best result among twenty tests not equivalent to one preregistered test?</p>
+    <details><summary>Reveal after answering</summary><p>The search created many opportunities for noise to win; selection changes the result's false-positive probability and requires correction or new confirmation.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Evidence strength is a property of the full design and search path. A small p-value cannot be interpreted without the estimand, sample, power, multiplicity, measurement, and practical threshold.</p>
+  <ol>
+      <li>Reconstruct the question asked before data.</li>
+      <li>Estimate effect and uncertainty.</li>
+      <li>Build the error-cost matrix.</li>
+      <li>Count analysis flexibility and repeated looks.</li>
+      <li>Choose act, confirm, redesign, or abandon.</li>
+  </ol>
+
+  <h2>Worked case: an AI feature lifts engagement</h2>
+  <div class="note"><p>One of twelve engagement metrics rises 8% with p = .02 after the team stops the test on a strong day. Retention is unchanged and inference cost rises. The result is exploratory; confirm the chosen primary metric and net value on a fixed new sample.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Write a one-page evidence memo for the case. Include the strongest argument for shipping and the strongest argument that the result is selection noise.</p>
+    <p><strong>Deliverable:</strong> An estimand, search audit, net-impact range, and next decision.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Use the same memo structure before allocating capital to any strategy discovered through extensive backtesting.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a simulation-forward introduction to estimation, testing, power, and statistical inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/inference-checklist.html">Inference Checklist</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What is the strongest next step?",
+    "options": [
+      "Confirm preregistered metric prospectively",
+      "Ship permanently without limits",
+      "Ignore inference costs entirely",
+      "Select another winning metric"
+    ],
+    "answer": 0,
+    "explain": "A fixed confirmatory test on new data addresses metric selection and optional stopping while measuring net value."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 22 — False positives, false negatives, and power</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 22 of 67 · 15–20 minutes</p>
+  <h1>False positives, false negatives, and power</h1>
+  <p class="lede">Design evidence around the cost of each mistake and the chance of detecting what matters.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Exceptional judgment distinguishes a noisy estimate from evidence strong enough to change a costly action.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Why is statistical detection insufficient for a product decision?</p>
+    <details><summary>Reveal after answering</summary><p>A decision needs effect magnitude, uncertainty, implementation costs, reversibility, and practical thresholds—not only whether a null was rejected.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A false positive acts on an effect that is not real; a false negative misses one that is. Power is the probability a design detects a specified real effect. Error rates become decisions only after attaching consequences.</p>
+  <ol>
+      <li>Write the action caused by a positive result.</li>
+      <li>Price the consequence of a false positive.</li>
+      <li>Price the consequence of a false negative.</li>
+      <li>Choose the minimum effect worth detecting.</li>
+      <li>Check whether sample size and noise provide adequate power.</li>
+  </ol>
+
+  <h2>Worked case: fraud blocking versus feature testing</h2>
+  <div class="note"><p>A false fraud flag harms a legitimate customer immediately; a missed fraud creates financial loss. In a reversible UI test, a temporary false positive may be cheap. The same statistical threshold should not govern both decisions.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Build a two-by-two error table for one live decision. Put a concrete action and cost in every cell, then state which error deserves more protection.</p>
+    <p><strong>Deliverable:</strong> An error-cost matrix and minimum detectable effect.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>A low-power backtest can miss useful edges; testing thousands of weak strategies creates the opposite problem—many false discoveries.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a simulation-forward introduction to estimation, testing, power, and statistical inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/inference-checklist.html">Inference Checklist</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What does statistical power measure?",
+    "options": [
+      "Chance of detecting effect",
+      "Chance hypothesis is true",
+      "Cost of false alarms",
+      "Size of observed sample"
+    ],
+    "answer": 0,
+    "explain": "Power is the probability of detecting a specified effect when that effect is real under the design assumptions."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

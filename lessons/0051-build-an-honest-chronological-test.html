@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 51 — Build an honest chronological test</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 51 of 67 · 15–20 minutes</p>
+  <h1>Build an honest chronological test</h1>
+  <p class="lede">Make the simulated decision know only what the real decision maker could know.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Market judgment demands falsifiable edges, honest chronology, realistic costs, survival-focused sizing, and resistance to backtest seduction.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What two steps prevent hindsight from defining a technical pattern?</p>
+    <details><summary>Reveal after answering</summary><p>Fix numerical labeling rules before outcomes and determine the signal using only information available at the real-time decision point.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Financial data are ordered and adaptive. Random shuffling can leak regimes and overlapping labels. An honest test preserves chronology, uses point-in-time universes and features, models execution delay, and reserves truly later data.</p>
+  <ol>
+      <li>Freeze the research question and development sample.</li>
+      <li>Audit every feature timestamp and data revision.</li>
+      <li>Use point-in-time membership and delisted assets.</li>
+      <li>Model next-executable prices and costs.</li>
+      <li>Evaluate once on untouched later periods.</li>
+  </ol>
+
+  <h2>Worked case: backtesting index constituents</h2>
+  <div class="note"><p>Testing today's index members back through history removes firms that failed or were dropped. Using the day's close to generate and execute a signal at that same close may also be impossible. Both inflate apparent performance.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Draw a timeline for one strategy: observation availability, computation, order submission, execution, and outcome. Mark every place future information could enter.</p>
+    <p><strong>Deliverable:</strong> A point-in-time audit and chronological evaluation plan.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Product analyses also leak future information when defining successful users by behavior that occurs after the prediction point.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://experts.illinois.edu/en/publications/what-do-we-know-about-the-profitability-of-technical-analysis/">What do we know about technical analysis? — Park & Irwin</a> — a peer-reviewed review finding mixed evidence and recurring problems with data snooping, rule selection, risk, and costs.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/honest-strategy-test.html">Honest Strategy Test</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What is look-ahead bias?",
+    "options": [
+      "Future information enters decisions",
+      "Past information receives weights",
+      "Execution occurs after signals",
+      "Benchmarks use available prices"
+    ],
+    "answer": 0,
+    "explain": "Look-ahead bias lets a historical decision use data unavailable at its simulated decision time."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

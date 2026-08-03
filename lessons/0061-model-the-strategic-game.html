@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 61 — Model the strategic game</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 61 of 67 · 15–20 minutes</p>
+  <h1>Model the strategic game</h1>
+  <p class="lede">Recognize when your outcome depends on another agent's response, then represent the interaction before choosing.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Exceptional judgment anticipates adaptation. Game theory turns customers, competitors, partners, employees, and market participants from static assumptions into agents with incentives, information, and responses of their own.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What must a consequential strategy memo specify before outcomes are known?</p>
+    <details><summary>Reveal after answering</summary><p>The decision, primitives, competing models, base rates, probabilities, causal assumptions, alternatives, downside, evidence gates, falsifiers, owners, and review dates.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A decision is strategic when each player's best action depends on what others do. Model the players, available strategies, timing, information, outcomes, and payoffs. Payoffs must represent what actors actually value—not only money, and not what they publicly claim to value.</p>
+  <ol>
+      <li>Name the smallest set of decision-relevant players.</li>
+      <li>List feasible strategies rather than vague intentions.</li>
+      <li>Specify who moves when and who observes what.</li>
+      <li>Estimate payoffs including risk, status, delay, and outside options.</li>
+      <li>Write at least one rival model of the game.</li>
+  </ol>
+
+  <h2>Worked case: two SaaS competitors consider a price cut</h2>
+  <div class="note"><p>A founder models only the revenue gained from a lower price. A strategic model also asks whether the rival will match, whether buyers will wait for further cuts, and whether both firms prefer today's margins to the likely price-war outcome. The crucial uncertainty is not demand alone; it is the rival's incentives and ability to respond.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Choose a live product, negotiation, hiring, or market decision. Write the players, strategies, move order, information, and ordinal payoffs. Then create a second model with different opponent incentives.</p>
+    <p><strong>Deliverable:</strong> Two compact game models and the assumption that changes your action.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Before predicting a competitor, ask whether you have modeled their actual constraints and incentives or merely projected your own.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://oyc.yale.edu/economics/econ-159/lecture-1">Introduction: Five First Lessons — Open Yale Courses</a> — introduces players, strategies, payoffs, dominance, prisoners' dilemmas, and coordination problems.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/applied-game-theory-playbook.html">Applied Game Theory Playbook</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What makes a decision strategically interactive?",
+    "options": [
+      "Others' responses change your payoff",
+      "More data improves your estimate",
+      "The outcome contains random variation",
+      "Your preferences include several objectives"
+    ],
+    "answer": 0,
+    "explain": "Strategic interaction exists when the value of your action depends on actions chosen by other agents."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

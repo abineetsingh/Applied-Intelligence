@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 23 — Interpret p-values correctly</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 23 of 67 · 15–20 minutes</p>
+  <h1>Interpret p-values correctly</h1>
+  <p class="lede">Read a p-value as a conditional statement about data, not a verdict about truth.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Exceptional judgment distinguishes a noisy estimate from evidence strong enough to change a costly action.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What determines whether false positives or false negatives deserve more protection?</p>
+    <details><summary>Reveal after answering</summary><p>Their decision consequences, reversibility, base rates, and the value of the effects that could be missed.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A p-value is the probability, assuming the null model and analysis are valid, of obtaining data at least as incompatible with that model as what was observed. It is not the probability the null is true, the probability results arose by chance, or the effect's importance.</p>
+  <ol>
+      <li>State the null model precisely.</li>
+      <li>Verify the analysis was not selected after seeing data.</li>
+      <li>Read p as P(data this extreme | null), not P(null | data).</li>
+      <li>Pair p with effect size and interval.</li>
+      <li>Return to the decision and error costs.</li>
+  </ol>
+
+  <h2>Worked case: a p-value of 0.03</h2>
+  <div class="note"><p>Under the specified null and procedure, results this extreme or more would occur about 3% of the time. This does not mean a 97% chance the product change works. Prior plausibility, design quality, multiplicity, magnitude, and costs remain.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Find or invent a p-value claim. Write three incorrect interpretations and one correct interpretation, then add the missing decision information.</p>
+    <p><strong>Deliverable:</strong> A corrected p-value statement plus effect size and decision threshold.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Treat a strategy's small p-value cautiously when the rule, assets, horizon, or sample was chosen after inspecting results.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a simulation-forward introduction to estimation, testing, power, and statistical inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/inference-checklist.html">Inference Checklist</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What does p equals .03 mean?",
+    "options": [
+      "Extreme data occur rarely",
+      "Null has three percent",
+      "Effect has proven importance",
+      "Replication will certainly succeed"
+    ],
+    "answer": 0,
+    "explain": "Under the null model and valid procedure, data this extreme or more occur with probability .03."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

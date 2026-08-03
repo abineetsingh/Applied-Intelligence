@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 30 — Design a decision-ready experiment</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 30 of 67 · 15–20 minutes</p>
+  <h1>Design a decision-ready experiment</h1>
+  <p class="lede">Start with the action rule, then design the smallest credible comparison.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Strategic action changes systems. Causal reasoning predicts what an intervention will do, not merely what variables accompany one another.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Distinguish a confounder from a collider.</p>
+    <details><summary>Reveal after answering</summary><p>A confounder is a common cause of treatment and outcome; a collider is a common effect of two variables, and conditioning on it can open bias.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A useful experiment is not merely randomized. It has a target population, intervention, comparison, outcome, sample logic, guardrails, and a precommitted action rule. Design backward from what different results would cause you to do.</p>
+  <ol>
+      <li>Write the decision and smallest meaningful effect.</li>
+      <li>Define eligibility before assignment.</li>
+      <li>Randomize and protect treatment separation.</li>
+      <li>Choose one primary outcome and guardrails.</li>
+      <li>Predefine duration, stopping, analysis, and action thresholds.</li>
+  </ol>
+
+  <h2>Worked case: testing concierge onboarding</h2>
+  <div class="note"><p>Randomly offer concierge help to eligible new accounts, measure activation and four-week retention, track support cost, and predefine whether to automate, continue manually, or stop. Measuring only immediate activation could reward a costly intervention with no durable value.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Design a one-page experiment for a real product or personal habit. Include the action you will take under positive, null, and harmful results.</p>
+    <p><strong>Deliverable:</strong> A preregistered experiment card with decision branches.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Paper trading is an experiment only if the rule, timestamps, costs, sample duration, and promotion threshold are fixed beforehand.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://www.hsph.harvard.edu/miguel-hernan/wp-content/uploads/sites/1268/2024/04/hernanrobins_WhatIf_26apr24.pdf">Causal Inference: What If — Hernán & Robins</a> — a free, rigorous treatment of counterfactuals, randomized experiments, and observational causal inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/causal-reasoning-checklist.html">Causal Reasoning Checklist</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What makes an experiment decision-ready?",
+    "options": [
+      "Precommitted actions follow results",
+      "Many metrics remain flexible",
+      "Stopping occurs when exciting",
+      "Assignment follows user preference"
+    ],
+    "answer": 0,
+    "explain": "A decision-ready design specifies how possible results map to action before outcomes invite rationalization."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

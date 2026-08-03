@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 53 — Size exposure around ruin</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 53 of 67 · 15–20 minutes</p>
+  <h1>Size exposure around ruin</h1>
+  <p class="lede">Treat uncertain edge estimates as fragile and keep losing sequences survivable.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Market judgment demands falsifiable edges, honest chronology, realistic costs, survival-focused sizing, and resistance to backtest seduction.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Why must the number of failed strategy trials accompany the winning result?</p>
+    <details><summary>Reveal after answering</summary><p>Selecting the maximum among many noisy trials inflates apparent performance; the search budget determines how much luck to expect.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Position size converts a forecast into survival risk. Full Kelly-style sizing assumes known probabilities and repeated opportunities; real estimates are uncertain and returns can be dependent. Conservative fractions, caps, and correlation limits protect against model error.</p>
+  <ol>
+      <li>Estimate edge as a range, not a point.</li>
+      <li>Model worst plausible loss and losing streak.</li>
+      <li>Aggregate correlated positions into common exposures.</li>
+      <li>Set drawdown, liquidity, and leverage constraints.</li>
+      <li>Scale slowly from live evidence.</li>
+  </ol>
+
+  <h2>Worked case: a seemingly high-confidence setup</h2>
+  <div class="note"><p>An estimated 60% win rate from 50 selected trades has wide uncertainty. Sizing as though 60% were known can overbet dramatically. Use conservative probability, fractional sizing, and hard exposure caps.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>For a hypothetical binary trade, compare size under optimistic, central, and conservative edge estimates. Simulate or calculate ten consecutive losses.</p>
+    <p><strong>Deliverable:</strong> A sizing range, drawdown result, and maximum-risk rule.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Founders also size bets: headcount, runway, reputation, and strategic lock-in should increase only with evidence.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://arxiv.org/abs/1710.01787">On Kelly Betting: Some Limitations — Hsieh & Barmish</a> — a treatment of Kelly-style allocation limits, including drawdown concerns.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/honest-strategy-test.html">Honest Strategy Test</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "Why use fractional sizing?",
+    "options": [
+      "Edge estimates remain uncertain",
+      "Losses become mathematically impossible",
+      "Correlation disappears from portfolios",
+      "Execution costs turn positive"
+    ],
+    "answer": 0,
+    "explain": "Sizing below a model optimum creates protection against estimation error, dependence, and unmodeled downside."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

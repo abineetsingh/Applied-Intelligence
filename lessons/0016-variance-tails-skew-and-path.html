@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 16 — Variance, tails, skew, and path</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 16 of 67 · 15–20 minutes</p>
+  <h1>Variance, tails, skew, and path</h1>
+  <p class="lede">Understand why identical averages can produce survival or ruin.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Data becomes leverage only when you understand how it was generated, how it varies, and what selection hid from view.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Name three distribution features an average can hide.</p>
+    <details><summary>Reveal after answering</summary><p>Spread, skew, tails, multimodality, and subgroup structure are all valid examples.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Variance describes dispersion; skew describes asymmetry; tails describe rare extremes. Path dependence means the order of outcomes changes what remains possible. A favorable average cannot compensate for an early loss that removes you from the game.</p>
+  <ol>
+      <li>Estimate ordinary spread around the center.</li>
+      <li>Inspect which tail contains the consequential extremes.</li>
+      <li>Ask whether losses compound or trigger constraints.</li>
+      <li>Simulate adverse ordering, not only final averages.</li>
+      <li>Protect survival before maximizing expected payoff.</li>
+  </ol>
+
+  <h2>Worked case: two acquisition channels</h2>
+  <div class="note"><p>Both channels average $100 acquisition cost. Channel A stays between $80 and $120; Channel B alternates between $10 and $1,000 with limited warning. If cash is constrained, Channel B's variance can end the experiment before its low-cost periods arrive.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Take one repeated decision with upside and downside. Sketch best, typical, and severe-tail outcomes, then reorder them into the worst survivable sequence.</p>
+    <p><strong>Deliverable:</strong> A tail-risk table and one survival constraint.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>In trading, a strategy can have positive arithmetic expectation and still be unusable because leverage and drawdown create path-dependent ruin.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a modern foundation for sampling, distributions, simulation, and inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/data-claim-audit.html">Data-Claim Audit</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "Why does outcome order matter?",
+    "options": [
+      "Constraints can bind early",
+      "Averages change arithmetic rules",
+      "Skew removes every loss",
+      "Tails guarantee later recovery"
+    ],
+    "answer": 0,
+    "explain": "Early drawdowns can exhaust capital, trust, or time, preventing participation in later gains."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

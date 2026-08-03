@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 15 — Reason with distributions</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 15 of 67 · 15–20 minutes</p>
+  <h1>Reason with distributions</h1>
+  <p class="lede">Replace the typical case with shape, spread, and meaningful subgroups.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Data becomes leverage only when you understand how it was generated, how it varies, and what selection hid from view.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>Distinguish a parameter from an estimate in one sentence.</p>
+    <details><summary>Reveal after answering</summary><p>A parameter is an unknown property of the target population; an estimate is the sample-derived approximation of it.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>An average compresses a distribution and discards information. Decision quality may depend on dispersion, skew, multimodality, or subgroup differences. Always ask what different distributions could share the same mean.</p>
+  <ol>
+      <li>Plot or imagine the full distribution before summarizing.</li>
+      <li>Locate center with mean and median.</li>
+      <li>Measure spread and inspect tails.</li>
+      <li>Look for clusters caused by mixed populations.</li>
+      <li>Choose summaries aligned with the decision's loss function.</li>
+  </ol>
+
+  <h2>Worked case: average customer value</h2>
+  <div class="note"><p>Average annual revenue of $10,000 could describe uniform accounts near $10,000 or a few $500,000 accounts plus many near zero. The first supports a standardized motion; the second demands segment economics and concentration risk.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Create two imaginary ten-value datasets with the same mean but opposite business implications. Compute median and range, then state which decision each supports.</p>
+    <p><strong>Deliverable:</strong> Two distributions, three summaries, and contrasting decisions.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Compare strategies using return distributions and drawdowns, not average return alone.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a modern foundation for sampling, distributions, simulation, and inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/data-claim-audit.html">Data-Claim Audit</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "Why can equal means mislead?",
+    "options": [
+      "Distributions may differ radically",
+      "Means contain every observation",
+      "Medians always equal means",
+      "Spread never changes decisions"
+    ],
+    "answer": 0,
+    "explain": "Different spread, skew, tails, or clusters can produce the same average and very different risks."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

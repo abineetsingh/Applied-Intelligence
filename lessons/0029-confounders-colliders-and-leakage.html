@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 29 — Confounders, colliders, and leakage</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 29 of 67 · 15–20 minutes</p>
+  <h1>Confounders, colliders, and leakage</h1>
+  <p class="lede">Know when controlling for more variables creates rather than removes bias.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Strategic action changes systems. Causal reasoning predicts what an intervention will do, not merely what variables accompany one another.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What belongs on a causal diagram before covariate adjustment?</p>
+    <details><summary>Reveal after answering</summary><p>Treatment, outcome, their common causes, variables caused by treatment, and mechanisms determining selection or observation.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>A confounder causes both treatment and outcome and may need adjustment. A collider is caused by two variables; conditioning on it can create a false association. Leakage lets future or outcome-derived information enter a predictor, producing impossible performance.</p>
+  <ol>
+      <li>Classify variables by causal role, not correlation strength.</li>
+      <li>Adjust for pre-treatment common causes when assumptions support it.</li>
+      <li>Avoid automatic control for post-treatment variables.</li>
+      <li>Audit selection criteria for colliders.</li>
+      <li>Enforce timestamps so future information cannot leak backward.</li>
+  </ol>
+
+  <h2>Worked case: analyzing only sales-qualified leads</h2>
+  <div class="note"><p>Product fit and salesperson enthusiasm both affect qualification. Among qualified leads, low product fit may appear associated with high enthusiasm because either can secure entry. Conditioning on qualification, a collider, creates a misleading relationship.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Take your previous causal graph. For every variable you planned to control, write why it is a confounder rather than mediator or collider. Add timestamp boundaries.</p>
+    <p><strong>Deliverable:</strong> A variable-role table and leakage audit.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Using revised earnings data, index members selected after the period, or indicators computed with future bars creates trading leakage.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://www.hsph.harvard.edu/miguel-hernan/wp-content/uploads/sites/1268/2024/04/hernanrobins_WhatIf_26apr24.pdf">Causal Inference: What If — Hernán & Robins</a> — a free, rigorous treatment of counterfactuals, randomized experiments, and observational causal inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/causal-reasoning-checklist.html">Causal Reasoning Checklist</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "What can conditioning on colliders do?",
+    "options": [
+      "Create spurious association paths",
+      "Remove every causal effect",
+      "Guarantee randomized comparison groups",
+      "Prevent future data leakage"
+    ],
+    "answer": 0,
+    "explain": "Selecting or controlling on a shared effect can induce association between its causes."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

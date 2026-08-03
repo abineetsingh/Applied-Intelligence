@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 18 — Recognize selection and measurement bias</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 18 of 67 · 15–20 minutes</p>
+  <h1>Recognize selection and measurement bias</h1>
+  <p class="lede">Study who is missing, why they are missing, and how labels were produced.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Data becomes leverage only when you understand how it was generated, how it varies, and what selection hid from view.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What is the key limitation of simulation?</p>
+    <details><summary>Reveal after answering</summary><p>It reveals consequences of modeled assumptions but does not establish that the assumptions or structure are true.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Selection bias changes which cases become visible. Survivorship removes failures; nonresponse removes people who decline; measurement bias shifts recorded values away from the intended construct. More data repeats these distortions more precisely.</p>
+  <ol>
+      <li>Define the cases that could have appeared but did not.</li>
+      <li>Ask whether visibility depends on outcome or exposure.</li>
+      <li>Separate the construct from its proxy measurement.</li>
+      <li>Identify incentives affecting reports and labels.</li>
+      <li>Seek negative cases and alternative measurements.</li>
+  </ol>
+
+  <h2>Worked case: learning from famous founders</h2>
+  <div class="note"><p>Biographies select visible winners, reconstruct decisions after outcomes, and omit similar founders who behaved alike but failed. Their stories can generate hypotheses, but cannot estimate whether the behavior caused success without comparison cases.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Choose one dataset or set of anecdotes influencing you. Write the invisible population, the mechanism selecting visible cases, and one proxy that may not measure the intended construct.</p>
+    <p><strong>Deliverable:</strong> A missing-cases ledger and a repair strategy.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>A database containing only currently listed stocks cannot honestly test strategies on firms that disappeared.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a modern foundation for sampling, distributions, simulation, and inference.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/data-claim-audit.html">Data-Claim Audit</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "Can larger samples remove selection bias?",
+    "options": [
+      "No bias can persist",
+      "Yes size fixes everything",
+      "Only averages remove bias",
+      "Only charts remove bias"
+    ],
+    "answer": 0,
+    "explain": "A larger biased sample estimates the wrong target more precisely. Repair requires changing design or assumptions."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>

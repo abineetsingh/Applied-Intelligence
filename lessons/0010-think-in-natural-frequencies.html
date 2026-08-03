@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 10 — Think in natural frequencies</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <link rel="stylesheet" href="../assets/progress.css">
+</head>
+<body>
+<main>
+  <p class="kicker">Lesson 10 of 67 · 15–20 minutes</p>
+  <h1>Think in natural frequencies</h1>
+  <p class="lede">Convert conditional percentages into countable cases your mind can inspect.</p>
+
+  <div class="mission">
+    <span class="callout-label">Mission connection</span>
+    <p>Limited information never disappears. Exceptional judgment makes uncertainty explicit, comparable, updateable, and accountable.</p>
+  </div>
+
+  <h2>Retrieve before reading</h2>
+  <div class="exercise retrieval-practice">
+    <p>What is the outside view, and what should happen before case-specific adjustment?</p>
+    <details><summary>Reveal after answering</summary><p>It starts from outcomes in a causally relevant reference class; the class rate becomes the prior before documented adjustments.</p></details>
+  </div>
+
+  <h2>The mental model</h2>
+  <p>Conditional percentages hide denominators. Natural frequencies express the same information as counts that preserve the sampling structure: out of 1,000 cases, how many belong to each branch? This often makes Bayesian reasoning almost mechanical.</p>
+  <ol>
+      <li>Choose a convenient population such as 1,000 cases.</li>
+      <li>Apply the base rate first.</li>
+      <li>Split true cases by sensitivity or hit rate.</li>
+      <li>Split false cases by false-positive rate.</li>
+      <li>Compare true hits with all observed hits.</li>
+  </ol>
+
+  <h2>Worked case: a noisy fraud alert</h2>
+  <div class="note"><p>Suppose 1% of 1,000 transactions are fraudulent: 10 frauds. A system catches 90%, yielding 9 true alerts. If it falsely flags 5% of 990 legitimate transactions, that adds about 50 false alerts. Only about 9 of 59 alerts indicate fraud—roughly 15%, not 90%.</p></div>
+
+  <h2>Deliberate practice</h2>
+  <div class="exercise">
+    <p>Build a 1,000-case frequency tree for a product lead score, medical test, or trading signal. Use invented but clearly labeled assumptions if real rates are unavailable.</p>
+    <p><strong>Deliverable:</strong> A frequency tree showing true hits, misses, false alarms, and correct rejections.</p>
+  </div>
+
+  <h2>Check your judgment</h2>
+  <p>Answer before rereading. Feedback appears immediately.</p>
+  <div id="quiz"></div>
+
+  <h2>Transfer it</h2>
+  <p>Any rare chart pattern needs this treatment: start with how often the desired move occurs without the pattern, then count true and false signals.</p>
+
+  <div class="note">
+    <span class="callout-label">Primary source</span>
+    <p><a href="https://openintro.org/book/ims/online/">Introduction to Modern Statistics — OpenIntro</a> — a free, transparent foundation for probability, data, and statistical reasoning.</p>
+  </div>
+
+  <p>Ask your teacher about anything unclear, or paste your deliverable for critique. The feedback loop is part of the lesson.</p>
+
+  <footer class="lesson-footer">
+    <nav class="lesson-nav" aria-label="Lesson navigation">
+      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/probability-and-updating.html">Probability and Updating</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    </nav>
+    <p class="authorship">Authored by: Abineet Singh | August 2026</p>
+  </footer>
+</main>
+<script src="../assets/quiz.js"></script>
+<script>renderQuiz("quiz", [
+  {
+    "prompt": "Why can accurate alerts mislead?",
+    "options": [
+      "Base rates remain small",
+      "Percentages are always false",
+      "Signals remove every denominator",
+      "Accuracy guarantees useful predictions"
+    ],
+    "answer": 0,
+    "explain": "When the target is rare, false positives from the much larger negative class can dominate observed alerts."
+  }
+]);</script>
+<script src="../assets/progress-data.js"></script>
+<script src="../assets/progress.js"></script>
+</body>
+</html>
