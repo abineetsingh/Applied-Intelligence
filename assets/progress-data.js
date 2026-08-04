@@ -3,7 +3,7 @@ window.REASONING_COURSE = {
   "id": "applied-intelligence",
   "name": "Applied Intelligence Under Uncertainty",
   "shortName": "Applied Intelligence",
-  "tocHref": "00-table_of_contents.html",
+  "tocHref": "index.html",
   "phases": [
     {
       "title": "Phase 1: First-principles operating system",

@@ -118,7 +118,7 @@ ${moves}
 
   <footer class="lesson-footer">
     <nav class="lesson-nav" aria-label="Lesson navigation">
-      <p><a href="../00-table_of_contents.html">Table of contents</a> · <a href="../reference/${lesson.phase.reference.slug}.html">${lesson.phase.reference.title}</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+      <p><a href="../index.html">Table of contents</a> · <a href="../reference/${lesson.phase.reference.slug}.html">${lesson.phase.reference.title}</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
     </nav>
     <p class="authorship">Authored by: Abineet Singh | August 2026</p>
   </footer>
@@ -152,7 +152,7 @@ ${items}
   </ol>
   <div class="note"><span class="callout-label">Guardrail</span><p>${phase.reference.guardrail}</p></div>
   <footer class="lesson-footer">
-    <p><a href="../00-table_of_contents.html">Course table of contents</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
+    <p><a href="../index.html">Course table of contents</a> · <a href="../CURRICULUM.md">Course rationale</a></p>
     <p class="authorship">Authored by: Abineet Singh | August 2026</p>
   </footer>
 </main>
@@ -166,7 +166,7 @@ function progressData() {
     id: "applied-intelligence",
     name: "Applied Intelligence Under Uncertainty",
     shortName: "Applied Intelligence",
-    tocHref: "00-table_of_contents.html",
+    tocHref: "index.html",
     phases: phases.map((phase) => ({
       title: phase.title,
       lessons: phase.lessons.map((lesson) => ({

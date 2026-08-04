@@ -53,7 +53,7 @@ function checkHtml(relativeFile) {
   }
 }
 
-checkHtml("00-table_of_contents.html");
+checkHtml("index.html");
 for (const file of lessonFiles) checkHtml(path.join("lessons", file));
 for (const file of referenceFiles) checkHtml(path.join("reference", file));
 

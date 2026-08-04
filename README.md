@@ -2,7 +2,7 @@
 
 This repository contains a self-paced, 67-lesson course for developing stronger judgment under uncertainty. It is designed for an experienced technical professional, aspiring founder, and trader who wants to; reason from first principles, interpret probability and evidence accurately, choose worthwhile product problems, and make faster decisions without sacrificing rigor.
 
-Lessons are standalone, mobile-friendly HTML pages that can be opened directly in a browser. They combine concise mental models, retrieval practice, worked real-world cases, immediate-feedback quizzes, transfer prompts, primary sources, and concrete decision artifacts. The course compounds deliberately, so it is best completed in sequence. Start with the [interactive table of contents](./00-table_of_contents.html).
+Lessons are standalone, mobile-friendly HTML pages that can be opened directly in a browser. They combine concise mental models, retrieval practice, worked real-world cases, immediate-feedback quizzes, transfer prompts, primary sources, and concrete decision artifacts. The course compounds deliberately, so it is best completed in sequence. Start with the [interactive table of contents](./index.html).
 
 ## Table of contents
 
@@ -115,7 +115,7 @@ The full instructional rationale, artifacts, and lesson sequence live in [CURRIC
 
 No application server or package installation is required for the lessons themselves.
 
-1. Open `00-table_of_contents.html` in a browser.
+1. Open `index.html` in a browser.
 2. Start with Lesson 1 or continue from the lesson shown by the tracker.
 3. Answer the retrieval prompt before revealing its explanation.
 4. Work through the mental model and case.
@@ -134,12 +134,12 @@ For consistent progress tracking across pages while working locally, serve the r
 python3 -m http.server 8000
 ```
 
-Then open <http://localhost:8000/00-table_of_contents.html>. Direct `file://` tabs may isolate browser storage by file.
+Then open <http://localhost:8000/>. Direct `file://` tabs may isolate browser storage by file.
 
 On macOS, you can open the course directly with:
 
 ```bash
-open 00-table_of_contents.html
+open index.html
 ```
 
 The course is intended for regular practice rather than a single reading pass. A pace of one 15–20 minute lesson per day leaves room for retrieval, real-world application, and spaced review.
@@ -157,7 +157,7 @@ The course is intended for regular practice rather than a single reading pass. A
 
 ```text
 .
-├── 00-table_of_contents.html       # Interactive course index and tracker
+├── index.html                      # Interactive course index and tracker
 ├── README.md                       # Repository documentation
 ├── CURRICULUM.md                   # Complete 67-day sequence and rationale
 ├── MISSION.md                      # Learning objective and success criteria
@@ -219,7 +219,7 @@ Generated files should be changed through the corresponding `tools/content/phase
 
 The course is a static site. It can be hosted on GitHub Pages, Cloudflare Pages, Netlify, Vercel, an object-storage website, or any conventional web server without a build command.
 
-For GitHub Pages, publish the repository root and use `00-table_of_contents.html` as the course entry point. If a platform expects `index.html`, either configure the entry URL explicitly or add a small index page linking or redirecting to the table of contents.
+For GitHub Pages, publish the repository root. GitHub Pages serves `index.html` automatically at the repository's project-site URL.
 
 Browser progress is origin-specific. Progress recorded on a local server will not transfer automatically to a deployed domain, another browser, or another device.
 
