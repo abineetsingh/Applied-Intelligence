@@ -1,6 +1,6 @@
 # Applied Intelligence Under Uncertainty
 
-This repository contains a self-paced, 67-lesson course for developing stronger judgment under uncertainty. It is designed for an experienced software engineer, aspiring founder, and trader who wants to reason from first principles, interpret probability and evidence accurately, choose worthwhile product problems, and make faster decisions without sacrificing rigor.
+This repository contains a self-paced, 67-lesson course for developing stronger judgment under uncertainty. It is designed for an experienced technical professional, aspiring founder, and trader who wants to; reason from first principles, interpret probability and evidence accurately, choose worthwhile product problems, and make faster decisions without sacrificing rigor.
 
 Lessons are standalone, mobile-friendly HTML pages that can be opened directly in a browser. They combine concise mental models, retrieval practice, worked real-world cases, immediate-feedback quizzes, transfer prompts, primary sources, and concrete decision artifacts. The course compounds deliberately, so it is best completed in sequence. Start with the [interactive table of contents](./00-table_of_contents.html).
 
@@ -142,7 +142,7 @@ On macOS, you can open the course directly with:
 open 00-table_of_contents.html
 ```
 
-The course is intended for regular practice rather than a single reading pass. A pace of one 15–20 minute lesson per weekday leaves room for retrieval, real-world application, and spaced review.
+The course is intended for regular practice rather than a single reading pass. A pace of one 15–20 minute lesson per day leaves room for retrieval, real-world application, and spaced review.
 
 ## Tech stack
 
