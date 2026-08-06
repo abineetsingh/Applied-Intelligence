@@ -15,7 +15,7 @@ function assert(condition, message) {
 }
 
 assert(lessonFiles.length === 67, `Expected 67 lesson files; found ${lessonFiles.length}`);
-const lessonIds = lessonFiles.map((file) => Number(file.match(/^(\d{4})-/)?.[1]));
+const lessonIds = lessonFiles.map((file) => Number(file.match(/^(\d{2})-/)?.[1]));
 assert(lessonIds.every((id, index) => id === index + 1), `Lesson IDs are not sequential: ${lessonIds.join(", ")}`);
 
 const context = { window: {} };

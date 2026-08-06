@@ -11,31 +11,31 @@ window.REASONING_COURSE = {
         {
           "id": "0001",
           "title": "Separate decision quality from outcome quality",
-          "href": "lessons/0001-separate-decisions-from-outcomes.html",
+          "href": "lessons/01-separate-decisions-from-outcomes.html",
           "available": true
         },
         {
           "id": "0002",
           "title": "Turn a situation into a decision",
-          "href": "lessons/0002-turn-a-situation-into-a-decision.html",
+          "href": "lessons/02-turn-a-situation-into-a-decision.html",
           "available": true
         },
         {
           "id": "0003",
           "title": "Atomize a problem",
-          "href": "lessons/0003-atomize-a-problem.html",
+          "href": "lessons/03-atomize-a-problem.html",
           "available": true
         },
         {
           "id": "0004",
           "title": "Rebuild from primitives",
-          "href": "lessons/0004-rebuild-from-primitives.html",
+          "href": "lessons/04-rebuild-from-primitives.html",
           "available": true
         },
         {
           "id": "0005",
           "title": "Mixed case: atomic decomposition",
-          "href": "lessons/0005-mixed-case-atomic-decomposition.html",
+          "href": "lessons/05-mixed-case-atomic-decomposition.html",
           "available": true
         }
       ]
@@ -46,43 +46,43 @@ window.REASONING_COURSE = {
         {
           "id": "0006",
           "title": "Replace vague uncertainty with probabilities",
-          "href": "lessons/0006-replace-vague-uncertainty-with-probabilities.html",
+          "href": "lessons/06-replace-vague-uncertainty-with-probabilities.html",
           "available": true
         },
         {
           "id": "0007",
           "title": "Understand two meanings of probability",
-          "href": "lessons/0007-two-meanings-of-probability.html",
+          "href": "lessons/07-two-meanings-of-probability.html",
           "available": true
         },
         {
           "id": "0008",
           "title": "Combine and condition probabilities",
-          "href": "lessons/0008-combine-and-condition-probabilities.html",
+          "href": "lessons/08-combine-and-condition-probabilities.html",
           "available": true
         },
         {
           "id": "0009",
           "title": "Start outside with reference classes",
-          "href": "lessons/0009-start-outside-with-reference-classes.html",
+          "href": "lessons/09-start-outside-with-reference-classes.html",
           "available": true
         },
         {
           "id": "0010",
           "title": "Think in natural frequencies",
-          "href": "lessons/0010-think-in-natural-frequencies.html",
+          "href": "lessons/10-think-in-natural-frequencies.html",
           "available": true
         },
         {
           "id": "0011",
           "title": "Update beliefs with Bayes",
-          "href": "lessons/0011-update-beliefs-with-bayes.html",
+          "href": "lessons/11-update-beliefs-with-bayes.html",
           "available": true
         },
         {
           "id": "0012",
           "title": "Mixed case: update from imperfect signals",
-          "href": "lessons/0012-mixed-case-update-from-imperfect-signals.html",
+          "href": "lessons/12-mixed-case-update-from-imperfect-signals.html",
           "available": true
         }
       ]
@@ -93,49 +93,49 @@ window.REASONING_COURSE = {
         {
           "id": "0013",
           "title": "Identify the data-generating process",
-          "href": "lessons/0013-identify-the-data-generating-process.html",
+          "href": "lessons/13-identify-the-data-generating-process.html",
           "available": true
         },
         {
           "id": "0014",
           "title": "Population, sample, parameter, estimate",
-          "href": "lessons/0014-population-sample-parameter-estimate.html",
+          "href": "lessons/14-population-sample-parameter-estimate.html",
           "available": true
         },
         {
           "id": "0015",
           "title": "Reason with distributions",
-          "href": "lessons/0015-reason-with-distributions.html",
+          "href": "lessons/15-reason-with-distributions.html",
           "available": true
         },
         {
           "id": "0016",
           "title": "Variance, tails, skew, and path",
-          "href": "lessons/0016-variance-tails-skew-and-path.html",
+          "href": "lessons/16-variance-tails-skew-and-path.html",
           "available": true
         },
         {
           "id": "0017",
           "title": "Make probability tangible with simulation",
-          "href": "lessons/0017-make-probability-tangible-with-simulation.html",
+          "href": "lessons/17-make-probability-tangible-with-simulation.html",
           "available": true
         },
         {
           "id": "0018",
           "title": "Recognize selection and measurement bias",
-          "href": "lessons/0018-recognize-selection-and-measurement-bias.html",
+          "href": "lessons/18-recognize-selection-and-measurement-bias.html",
           "available": true
         },
         {
           "id": "0019",
           "title": "Interpret intervals",
-          "href": "lessons/0019-interpret-intervals.html",
+          "href": "lessons/19-interpret-intervals.html",
           "available": true
         },
         {
           "id": "0020",
           "title": "Mixed case: deep pattern or resemblance?",
-          "href": "lessons/0020-mixed-case-deep-pattern-or-resemblance.html",
+          "href": "lessons/20-mixed-case-deep-pattern-or-resemblance.html",
           "available": true
         }
       ]
@@ -146,37 +146,37 @@ window.REASONING_COURSE = {
         {
           "id": "0021",
           "title": "Estimation versus hypothesis testing",
-          "href": "lessons/0021-estimation-versus-hypothesis-testing.html",
+          "href": "lessons/21-estimation-versus-hypothesis-testing.html",
           "available": true
         },
         {
           "id": "0022",
           "title": "False positives, false negatives, and power",
-          "href": "lessons/0022-false-positives-false-negatives-and-power.html",
+          "href": "lessons/22-false-positives-false-negatives-and-power.html",
           "available": true
         },
         {
           "id": "0023",
           "title": "Interpret p-values correctly",
-          "href": "lessons/0023-interpret-p-values-correctly.html",
+          "href": "lessons/23-interpret-p-values-correctly.html",
           "available": true
         },
         {
           "id": "0024",
           "title": "Statistical versus practical importance",
-          "href": "lessons/0024-statistical-versus-practical-importance.html",
+          "href": "lessons/24-statistical-versus-practical-importance.html",
           "available": true
         },
         {
           "id": "0025",
           "title": "Correct for repeated looks",
-          "href": "lessons/0025-correct-for-repeated-looks.html",
+          "href": "lessons/25-correct-for-repeated-looks.html",
           "available": true
         },
         {
           "id": "0026",
           "title": "Mixed case: is the effect real?",
-          "href": "lessons/0026-mixed-case-is-the-effect-real.html",
+          "href": "lessons/26-mixed-case-is-the-effect-real.html",
           "available": true
         }
       ]
@@ -187,43 +187,43 @@ window.REASONING_COURSE = {
         {
           "id": "0027",
           "title": "Ask the counterfactual question",
-          "href": "lessons/0027-ask-the-counterfactual-question.html",
+          "href": "lessons/27-ask-the-counterfactual-question.html",
           "available": true
         },
         {
           "id": "0028",
           "title": "Draw a causal diagram",
-          "href": "lessons/0028-draw-a-causal-diagram.html",
+          "href": "lessons/28-draw-a-causal-diagram.html",
           "available": true
         },
         {
           "id": "0029",
           "title": "Confounders, colliders, and leakage",
-          "href": "lessons/0029-confounders-colliders-and-leakage.html",
+          "href": "lessons/29-confounders-colliders-and-leakage.html",
           "available": true
         },
         {
           "id": "0030",
           "title": "Design a decision-ready experiment",
-          "href": "lessons/0030-design-a-decision-ready-experiment.html",
+          "href": "lessons/30-design-a-decision-ready-experiment.html",
           "available": true
         },
         {
           "id": "0031",
           "title": "Use observational evidence carefully",
-          "href": "lessons/0031-use-observational-evidence-carefully.html",
+          "href": "lessons/31-use-observational-evidence-carefully.html",
           "available": true
         },
         {
           "id": "0032",
           "title": "Pre-mortems and competing explanations",
-          "href": "lessons/0032-premortems-and-competing-explanations.html",
+          "href": "lessons/32-premortems-and-competing-explanations.html",
           "available": true
         },
         {
           "id": "0033",
           "title": "Mixed case: diagnose from sparse clues",
-          "href": "lessons/0033-mixed-case-diagnose-from-sparse-clues.html",
+          "href": "lessons/33-mixed-case-diagnose-from-sparse-clues.html",
           "available": true
         }
       ]
@@ -234,43 +234,43 @@ window.REASONING_COURSE = {
         {
           "id": "0034",
           "title": "Calculate expected value",
-          "href": "lessons/0034-calculate-expected-value.html",
+          "href": "lessons/34-calculate-expected-value.html",
           "available": true
         },
         {
           "id": "0035",
           "title": "Make preferences and tradeoffs explicit",
-          "href": "lessons/0035-make-preferences-and-tradeoffs-explicit.html",
+          "href": "lessons/35-make-preferences-and-tradeoffs-explicit.html",
           "available": true
         },
         {
           "id": "0036",
           "title": "Build sequential decision trees",
-          "href": "lessons/0036-build-sequential-decision-trees.html",
+          "href": "lessons/36-build-sequential-decision-trees.html",
           "available": true
         },
         {
           "id": "0037",
           "title": "Asymmetric upside, ruin, and irreversibility",
-          "href": "lessons/0037-asymmetric-upside-ruin-and-irreversibility.html",
+          "href": "lessons/37-asymmetric-upside-ruin-and-irreversibility.html",
           "available": true
         },
         {
           "id": "0038",
           "title": "Price the value of information",
-          "href": "lessons/0038-price-the-value-of-information.html",
+          "href": "lessons/38-price-the-value-of-information.html",
           "available": true
         },
         {
           "id": "0039",
           "title": "Prefer robust and reversible choices",
-          "href": "lessons/0039-prefer-robust-and-reversible-choices.html",
+          "href": "lessons/39-prefer-robust-and-reversible-choices.html",
           "available": true
         },
         {
           "id": "0040",
           "title": "Mixed case: build, test, wait, or stop",
-          "href": "lessons/0040-mixed-case-build-test-wait-or-stop.html",
+          "href": "lessons/40-mixed-case-build-test-wait-or-stop.html",
           "available": true
         }
       ]
@@ -281,43 +281,43 @@ window.REASONING_COURSE = {
         {
           "id": "0041",
           "title": "Separate problems from solutions",
-          "href": "lessons/0041-separate-problems-from-solutions.html",
+          "href": "lessons/41-separate-problems-from-solutions.html",
           "available": true
         },
         {
           "id": "0042",
           "title": "Map assumptions by risk and evidence",
-          "href": "lessons/0042-map-assumptions-by-risk-and-evidence.html",
+          "href": "lessons/42-map-assumptions-by-risk-and-evidence.html",
           "available": true
         },
         {
           "id": "0043",
           "title": "Interview for behavior and workarounds",
-          "href": "lessons/0043-interview-for-behavior-and-workarounds.html",
+          "href": "lessons/43-interview-for-behavior-and-workarounds.html",
           "available": true
         },
         {
           "id": "0044",
           "title": "Choose the cheapest decisive experiment",
-          "href": "lessons/0044-choose-the-cheapest-decisive-experiment.html",
+          "href": "lessons/44-choose-the-cheapest-decisive-experiment.html",
           "available": true
         },
         {
           "id": "0045",
           "title": "Distinguish interest from costly behavior",
-          "href": "lessons/0045-distinguish-interest-from-costly-behavior.html",
+          "href": "lessons/45-distinguish-interest-from-costly-behavior.html",
           "available": true
         },
         {
           "id": "0046",
           "title": "Read funnels, cohorts, and retention",
-          "href": "lessons/0046-read-funnels-cohorts-and-retention.html",
+          "href": "lessons/46-read-funnels-cohorts-and-retention.html",
           "available": true
         },
         {
           "id": "0047",
           "title": "Mixed case: continue, pivot, or kill",
-          "href": "lessons/0047-mixed-case-continue-pivot-or-kill.html",
+          "href": "lessons/47-mixed-case-continue-pivot-or-kill.html",
           "available": true
         }
       ]
@@ -328,43 +328,43 @@ window.REASONING_COURSE = {
         {
           "id": "0048",
           "title": "Define an edge after costs",
-          "href": "lessons/0048-define-an-edge-after-costs.html",
+          "href": "lessons/48-define-an-edge-after-costs.html",
           "available": true
         },
         {
           "id": "0049",
           "title": "Compare return distributions",
-          "href": "lessons/0049-compare-return-distributions.html",
+          "href": "lessons/49-compare-return-distributions.html",
           "available": true
         },
         {
           "id": "0050",
           "title": "Treat technical patterns as hypotheses",
-          "href": "lessons/0050-treat-technical-patterns-as-hypotheses.html",
+          "href": "lessons/50-treat-technical-patterns-as-hypotheses.html",
           "available": true
         },
         {
           "id": "0051",
           "title": "Build an honest chronological test",
-          "href": "lessons/0051-build-an-honest-chronological-test.html",
+          "href": "lessons/51-build-an-honest-chronological-test.html",
           "available": true
         },
         {
           "id": "0052",
           "title": "Correct for overfitting and selection",
-          "href": "lessons/0052-correct-for-overfitting-and-selection.html",
+          "href": "lessons/52-correct-for-overfitting-and-selection.html",
           "available": true
         },
         {
           "id": "0053",
           "title": "Size exposure around ruin",
-          "href": "lessons/0053-size-exposure-around-ruin.html",
+          "href": "lessons/53-size-exposure-around-ruin.html",
           "available": true
         },
         {
           "id": "0054",
           "title": "Mixed case: reject, test, or fund",
-          "href": "lessons/0054-mixed-case-reject-test-or-fund.html",
+          "href": "lessons/54-mixed-case-reject-test-or-fund.html",
           "available": true
         }
       ]
@@ -375,37 +375,37 @@ window.REASONING_COURSE = {
         {
           "id": "0055",
           "title": "Know when intuition is earned",
-          "href": "lessons/0055-know-when-intuition-is-earned.html",
+          "href": "lessons/55-know-when-intuition-is-earned.html",
           "available": true
         },
         {
           "id": "0056",
           "title": "Make recognition-primed decisions",
-          "href": "lessons/0056-make-recognition-primed-decisions.html",
+          "href": "lessons/56-make-recognition-primed-decisions.html",
           "available": true
         },
         {
           "id": "0057",
           "title": "Find bottlenecks and leverage",
-          "href": "lessons/0057-find-bottlenecks-and-leverage.html",
+          "href": "lessons/57-find-bottlenecks-and-leverage.html",
           "available": true
         },
         {
           "id": "0058",
           "title": "Read incentives and information flow",
-          "href": "lessons/0058-read-incentives-and-information-flow.html",
+          "href": "lessons/58-read-incentives-and-information-flow.html",
           "available": true
         },
         {
           "id": "0059",
           "title": "Construct and scale asymmetry",
-          "href": "lessons/0059-construct-and-scale-asymmetry.html",
+          "href": "lessons/59-construct-and-scale-asymmetry.html",
           "available": true
         },
         {
           "id": "0060",
           "title": "Capstone: defend a consequential strategy",
-          "href": "lessons/0060-capstone-defend-a-consequential-strategy.html",
+          "href": "lessons/60-capstone-defend-a-consequential-strategy.html",
           "available": true
         }
       ]
@@ -416,43 +416,43 @@ window.REASONING_COURSE = {
         {
           "id": "0061",
           "title": "Model the strategic game",
-          "href": "lessons/0061-model-the-strategic-game.html",
+          "href": "lessons/61-model-the-strategic-game.html",
           "available": true
         },
         {
           "id": "0062",
           "title": "Find best responses and equilibria",
-          "href": "lessons/0062-find-best-responses-and-equilibria.html",
+          "href": "lessons/62-find-best-responses-and-equilibria.html",
           "available": true
         },
         {
           "id": "0063",
           "title": "Reason backward and test commitments",
-          "href": "lessons/0063-reason-backward-and-test-commitments.html",
+          "href": "lessons/63-reason-backward-and-test-commitments.html",
           "available": true
         },
         {
           "id": "0064",
           "title": "Build cooperation in repeated games",
-          "href": "lessons/0064-build-cooperation-in-repeated-games.html",
+          "href": "lessons/64-build-cooperation-in-repeated-games.html",
           "available": true
         },
         {
           "id": "0065",
           "title": "Read signals and design screens",
-          "href": "lessons/0065-read-signals-and-design-screens.html",
+          "href": "lessons/65-read-signals-and-design-screens.html",
           "available": true
         },
         {
           "id": "0066",
           "title": "Bargain and design better rules",
-          "href": "lessons/0066-bargain-and-design-better-rules.html",
+          "href": "lessons/66-bargain-and-design-better-rules.html",
           "available": true
         },
         {
           "id": "0067",
           "title": "Capstone: change the game",
-          "href": "lessons/0067-game-theory-real-world-capstone.html",
+          "href": "lessons/67-game-theory-real-world-capstone.html",
           "available": true
         }
       ]

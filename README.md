@@ -183,7 +183,7 @@ The course is intended for regular practice rather than a single reading pass. A
         └── ... phase-10.mjs        # Structured source content for each phase
 ```
 
-Lesson filenames use four-digit identifiers, from `0001` through `0067`. Every lesson footer includes authorship and the month and year written.
+Lesson filenames use two-digit identifiers, from `01` through `67`. Every lesson footer includes authorship and the month and year written.
 
 ## Authoring and maintenance
 

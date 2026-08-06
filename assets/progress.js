@@ -41,8 +41,8 @@
   function detectPage() {
     const filename = decodeURIComponent(location.pathname.split("/").pop() || "");
     if (filename === course.tocHref) return { kind: "course" };
-    const id = (filename.match(/^(\d{4})-/) || [])[1];
-    const lesson = allLessons().find(function (item) { return item.id === id && item.available; });
+    const lessonNumber = Number((filename.match(/^(\d{2})-/) || [])[1]);
+    const lesson = allLessons().find(function (item) { return Number(item.id) === lessonNumber && item.available; });
     return lesson ? { kind: "lesson", lesson: lesson } : { kind: "other" };
   }
   function stats(progress) {
