@@ -126,7 +126,7 @@ No application server or package installation is required for the lessons themse
 
 Progress is stored in browser-local storage. It remains private to that browser profile and device; publishing the static files does not publish a learner's progress. The table of contents shows overall completion, phase progress, lesson status, and a continue-learning shortcut. Lessons and the table of contents include reset controls with confirmation.
 
-Every lesson recommends a primary source and ends with an invitation to ask an AI teacher a follow-up question or submit the practice deliverable for critique.
+Every lesson recommends a primary source and ends with a reusable, lesson-specific prompt for exploring the concept further with AI through retrieval, Socratic questioning, counterexamples, transfer, and real-world application.
 
 For consistent progress tracking across pages while working locally, serve the repository from its root:
 
@@ -211,7 +211,7 @@ The validator checks:
 - Every local link and script reference resolves
 - HTML pages include a doctype, viewport metadata, and authorship
 - Inline JavaScript parses successfully
-- Lessons include a primary source, teacher follow-up prompt, and progress integration
+- Lessons include a primary source, AI exploration prompt, and progress integration
 
 Generated files should be changed through the corresponding `tools/content/phase-*.mjs` source. Running the builder overwrites generated lesson and reference HTML.
 

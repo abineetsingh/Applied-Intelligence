@@ -61,7 +61,9 @@ for (const file of lessonFiles) {
   const html = fs.readFileSync(path.join(lessonDir, file), "utf8");
   assert(/Lesson \d+ of 67/.test(html), `${file}: lesson count is not 67`);
   assert(/Primary source/.test(html), `${file}: missing primary source`);
-  assert(/Ask your teacher|ask your teacher|follow-up question/i.test(html), `${file}: missing teacher follow-up prompt`);
+  assert(/Explore this concept further with AI/i.test(html), `${file}: missing AI exploration section`);
+  assert(/Socratic tutor/i.test(html), `${file}: missing AI exploration prompt`);
+  assert(!/your teacher|teacher chat/i.test(html), `${file}: contains a legacy teacher reference`);
   assert(/progress-data\.js/.test(html) && /progress\.js/.test(html), `${file}: missing progress integration`);
 }
 

@@ -64,7 +64,7 @@
         return field[1] + ":\n" + (record[field[0]] || "—");
       }).join("\n\n");
       navigator.clipboard.writeText(text).then(function () {
-        status.textContent = "Copied—paste it into your teacher chat.";
+        status.textContent = "Copied—paste it into your AI conversation.";
       }, function () {
         status.textContent = "Copy failed; select the fields manually.";
       });
